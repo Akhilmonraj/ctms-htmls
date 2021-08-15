@@ -256,3 +256,262 @@ a.event-link:hover{
     position: relative;
     left: -14px;
 }
+
+
+/* New Styling for Akhilmon Raj *****************************************************************************/
+
+/* Common */
+.login-wrap input:not(.button){
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+}
+
+.register-wrap input:not(.login-btn){
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+}
+
+
+/* Login */
+
+.login-wrap{
+    height: 100vh;
+}
+
+.login-wrap .container{
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.login-wrap .container .entry-content{
+    position: absolute;
+    width: 480px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-wrap .container .entry-content .logo{
+    padding: 10px 0;
+}
+
+.login-wrap .container .entry-content .logo img{
+    margin: 0 auto 25px;
+    width: 250px;
+    height: 100%;
+    max-height: none;
+}
+
+.login-wrap .container .entry-content .woocommerce{
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    background: #fff;
+    padding-top: 45px;
+}
+
+.login-wrap .container .entry-content form{
+    width: 100%;
+    padding: 0 55px 75px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.login-wrap .container .entry-content .woocommerce .login-title{
+    margin-bottom: 45px;
+    font-size: 1.75rem;
+}
+
+.login-wrap .container .entry-content form .login-input-icon{
+    float: left;
+    top: -33px;
+    position: relative;
+    left: 13px;
+}
+
+.login-wrap .container .entry-content form input:not(.button){
+    padding-left: 45px;
+}
+
+/* Register */
+.register-wrap{
+    height: 100vh;
+}
+
+.register-wrap .container{
+    padding: 0;
+    height: 100%;
+}
+
+.register-form-wrap{
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    background: #fff;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    position: relative;
+    top: 50%;
+}
+.register-wrap .container .align-items-center{ 
+    height: 100%;
+}
+
+.register-wrap .register-title{
+    margin-bottom: 45px;
+    font-size: 1.75rem;
+}
+
+.register-wrap .special-title h2.special-heading{
+    color: #fff;
+}
+
+.register-wrap .special-title {
+    position: relative;
+    top: -170px;
+}
+
+.register-free-icon{
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 110px;
+    transform: rotate(-32deg);
+}
+
+.register-wrap .register-input-icons{
+    float: left;
+    top: -33px;
+    position: relative;
+    left: 13px;
+}
+
+.register-wrap .register-form-wrap form  .register-form-input-group{
+    width: 100%;
+}
+
+.register-wrap .register-form-wrap form  .register-form-input-group input{
+    padding-left: 45px;
+}
+
+.register-wrap .register-form-wrap form  .register-form-input-group input::placeholder{
+    color: #5b5f66;
+}
+
+/* Responsive Styling */
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 1024px){
+    
+}
+
+@media (max-width: 991px){
+    .register-wrap .align-items-center{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-wrap .align-items-center > .col-md-6.special-title{
+            top: 0;
+            margin-bottom: 25px;
+    }
+    .register-wrap .align-items-center > .col-md-6{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .register-wrap .align-items-center > .col-md-6 .register-form-wrap{
+        width: 480px;
+    }
+}
+
+@media (max-width: 767px){
+    .login-wrap .container .entry-content{
+        max-width: 85%;
+    }
+
+    .register-wrap .align-items-center > .col-md-6 .register-form-wrap{
+        max-width: 85%;
+    }
+
+    .register-wrap .align-items-center > .col-md-6.special-title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 614px){
+    .register-wrap .align-items-center > .col-md-6:not(.special-title){
+        display: flex;
+        justify-content: center;
+    }
+
+    .register-wrap .align-items-center > .col-md-6:not(.special-title) .register-form-wrap .form-title{
+        position: relative;
+    }
+
+    .register-wrap .align-items-center > .col-md-6:not(.special-title) .register-form-wrap .form-title .register-free-icon{
+        left: 15px;
+    }
+
+    .registration-genter .col-sm-4{
+        display: flex;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 540px){
+    .login-wrap .container .entry-content form p input.button{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .login-wrap .container .entry-content form p a.btn{
+        width: 100%;
+    }
+
+    .login-wrap .container .entry-content form p{
+        margin-bottom: 10px;
+    }
+
+    .login-wrap .container .entry-content form{
+        padding-bottom: 45px;
+    }
+
+    .register-wrap .register-form-wrap form input.login-btn{
+        width: 100%;
+    } 
+
+    .register-wrap .register-form-wrap form a.btn{
+        width: 100%;
+        margin-bottom: 25px;
+    } 
+
+    .register-free-icon{
+        position: relative;
+        left: 0;    
+    }
+    .register-wrap .register-title{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px){
+
+
+
+}
+
+@media (max-width: 320px){
+    
+}
+
+/* Media height */
+@media (max-height: 920px){
+    .register-wrap {
+        height: unset;
+        padding: 45px 0;
+    }
+}
