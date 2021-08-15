@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Chessmii</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="csrf-token" content="">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- Styles -->
+	<!-- <link href="https://chessmii.com/css/app.css" rel="stylesheet">
+
+    <script src="https://chessmii.com/js/app.js" defer></script> -->
+
+	<link rel="stylesheet" href="https://chessmii.com/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://chessmii.com/css/animations.css">
+	<link rel="stylesheet" href="https://chessmii.com/css/font-awesome5.css">
+	<link rel="stylesheet" href="https://chessmii.com/css/icomoon.css">
+	<link rel="stylesheet" href="https://chessmii.com/css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="https://chessmii.com/css/shop.css" class="color-switcher-link">
+	<link rel="stylesheet" href="https://chessmii.com/css/style.css" class="color-switcher-link">
+	<script src="https://chessmii.com/js/vendor/modernizr-2.6.2.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input2">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- Top Bar -->
+<div class="header_absolute ">
+	<!-- header with two Bootstrap columns - left for logo and right for navigation -->
+	<header class="page_header ds ms bg-transparent justify-nav-center s-overlay s-py-10 ">
+
+		<div class="container-fluid">
+
+			<div class="row align-items-center">
+				<div class="col-xl-2 col-lg-3 col-md-7 col-8">
+					<a href="https://chessmii.com" class="logo">
+						<img src="https://chessmii.com/img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-xl-10 col-lg-9 col-md-5 col-1">
+					<div class="nav-wrap">
+						<!-- main nav start -->
+						<nav class="top-nav justify-nav-center">
+							<!-- <ul class="nav sf-menu">
+								<li class="">
+									<a href="https://chessmii.com">Home</a>
+									<ul>
+										<li>
+											<a href="#">#</a>
+										</li>
+									</ul>
+								</li>
+							</ul> -->
+						</nav>
+						<!-- eof main nav -->
+												<ul class="top-includes d-none d-xl-block text-right">
+							<!-- Notifications -->
+							<li>
+															</li>
+
+							<li>
+																<a class="login-form-btn" href="https://chessmii.com/login"><i class="far fa-user"></i> Login </a>
+															</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- header toggler -->
+		<span class="toggle_menu"><span></span></span>
+	</header>
+</div>
+<!-- Side Bar -->
+
+			<section class="ds s-overlay s-pt-xl-250 s-pt-lg-210 s-pt-md-170 s-pt-150 s-pb-xl-150 s-pb-lg-130 s-pb-md-90 s-pb-60 page_404 c-gutter-60">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 border-right text-center text-lg-right">
+                <span class="color-main main-text-404">404</span>
+            </div>
+            <div class="col-lg-6 text-center text-lg-left">
+                <p class="text-404">
+                    <span class="color-main">OOPS!<br></span>  Not Found                </p>
+            </div>
+            <div class="col-12 text-center">
+                <div class="fw-divider-space divider-30 divider-lg-35"></div>
+                <div class="many-buttons">
+                    <a class="btn btn-maincolor medium-btn" href="https://chessmii.com">Go Home</a>
+                    <a id="back-btn" class="btn btn-outline-darkgrey medium-btn" href="http://chessmii.com/">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+			<footer class="page_footer footer-1 text-center text-sm-left  ds s-pt-60 s-pb-30 c-mb-30 s-bordertop">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-xl-2 col-12 text-xl-left text-center  animate" data-animation="fadeInUp">
+                <a href="https://chessmii.com" class="logo">
+                    <img src="https://chessmii.com/img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="col-xl-8 col-12 text-center animate" data-animation="fadeInUp">
+
+                <div class="widget widget_nav_menu">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="courses.html">Courses</a>
+                        </li>
+                        <li>
+                            <a href="blog-right.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="shop-right.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-12 text-center text-xl-right animate" data-animation="fadeInUp">
+                <span class="social-icons">
+                    <a href="#" class="fab fab fa-facebook-f @iconClass" title="facebook"></a>
+                    <a href="#" class="fab fa-telegram-plane @iconClass" title="telegram"></a>
+                    <a href="#" class="fab fa-linkedin-in @iconClass" title="linkedin"></a>
+                    <a href="#" class="fab fa-instagram @iconClass" title="instagram"></a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<section class="page_copyright copyright1 ds s-pt-70 s-pb-60 s-bordertop">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center">
+
+                <p>&copy; Copyright <span class="copyright_year">2021</span> All Rights Reserved</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+	<script src="https://chessmii.com/js/compressed.js"></script>
+	<script src="https://chessmii.com/js/main.js"></script>
+	<script src="https://chessmii.com/js/common.js"></script>
+	<script src="https://chessmii.com/js/sweetalert.min.js"></script>
+		</body>
+
+</html>
