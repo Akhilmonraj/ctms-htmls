@@ -71,61 +71,11 @@
 	<div id="canvas">
 		<div id="box_wrapper">
 
-			<!-- Top Bar -->
-<div class="header_absolute ">
-	<!-- header with two Bootstrap columns - left for logo and right for navigation -->
-	<header class="page_header ds ms bg-transparent justify-nav-center s-overlay s-py-10 ">
-
-		<div class="container-fluid">
-
-			<div class="row align-items-center">
-				<div class="col-xl-2 col-lg-3 col-md-7 col-8">
-					<a href="index.html" class="logo">
-						<img src="img/logo.png" alt="">
-					</a>
-				</div>
-				<div class="col-xl-10 col-lg-9 col-md-5 col-1">
-					<div class="nav-wrap">
-						<!-- main nav start -->
-						<nav class="top-nav justify-nav-center">
-							<!-- <ul class="nav sf-menu">
-								<li class="">
-									<a href="https://chessmii.com">Home</a>
-									<ul>
-										<li>
-											<a href="#">#</a>
-										</li>
-									</ul>
-								</li>
-							</ul> -->
-						</nav>
-						<!-- eof main nav -->
-												<ul class="top-includes d-none d-xl-block text-right">
-							<!-- Notifications -->
-							<li>
-															</li>
-
-							<li>
-																<a class="login-form-btn" href="login.html"><i class="far fa-user"></i> Login </a>
-															</li>
-
-						</ul>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<!-- header toggler -->
-		<span class="toggle_menu"><span></span></span>
-	</header>
-</div>
-<!-- Side Bar -->
-
 			
-<section class="ls  s-py-xl-150 s-py-lg-130 s-py-md-90 s-py-60 c-gutter-60">
+<section class="page_title ls  s-py-xl-150 s-py-lg-130 s-py-md-90 s-py-60 c-gutter-60 register-wrap">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 special-title">
                 <p class="special-heading color-main sub-title">
                     <span class="text-uppercase">
                         Welcome
@@ -139,49 +89,58 @@
 
             </div>
             <div class="col-md-6 animate" data-animation="scaleAppear">
-                <div class="form-wrapper px-lg-70 py-lg-100 px-20 py-60 cs ">
+                <div class="register-form-wrap form-wrapper px-lg-70 py-lg-100 px-20 py-60 cs ">
 
 
                     <form class="signup-form" method="POST" action="https://chessmii.com/register">
                         <input type="hidden" name="_token" value="GuxyNivzHjvcJntL1heg83S7BTGwu1FNGZxA3sSh">                        <div class="row c-mb-20">
                             <div class="col-12 form-title  text-center">
-                                <h5 class="mb-0">Register Now !! It’s Free</h5>
+                                <img class="register-free-icon" src="img/free-large.png" alt="">
+                                <h3 class="register-title">Register Now !!</h3>
+                                
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group has-placeholder">
-                                    <label for="name1">Name <span class="required">*</span></label>
-                                    <input type="text" aria-required="true"  name="name" value="" id="name1" class="form-control" placeholder="Name">
+                            <div class="register-form-input-group">
+                                <div class="col-sm-12">
+                                    <div class="form-group has-placeholder">
+                                        <label for="name1">Name <span class="required">*</span></label>
+                                        <input type="text" aria-required="true"  name="name" value="" id="name1" class="form-control" placeholder="Name">
+                                        <img class="register-input-icons" src="img/user.png" alt="" width="18" >
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group has-placeholder">
-                                    <label for="username">Username <span class="required">*</span></label>
-                                    <input type="text"  name="username" value="" id="username" class="form-control" placeholder="Username">
+                                <div class="col-sm-12">
+                                    <div class="form-group has-placeholder">
+                                        <label for="username">Username <span class="required">*</span></label>
+                                        <input type="text"  name="username" value="" id="username" class="form-control" placeholder="Username">
+                                        <img class="register-input-icons" src="img/user.png" alt="" width="18" >
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group has-placeholder">
-                                    <label for="email1">Email<span class="required">*</span></label>
-                                    <input type="text" id="email1" class="form-control" name="email"  value="" aria-required="true" placeholder="Email">
+                                <div class="col-sm-12">
+                                    <div class="form-group has-placeholder">
+                                        <label for="email1">Email<span class="required">*</span></label>
+                                        <input type="text" id="email1" class="form-control" name="email"  value="" aria-required="true" placeholder="Email">
+                                        <img class="register-input-icons" src="img/envelope.png" alt="" width="18" >
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group has-placeholder">
-                                    <label for="mobile1">Mobile<span class="required">*</span></label>
-                                    <input type="text" id="mobile1" class="form-control" name="mobile" value="" aria-required="true" placeholder="Mobile">
+                                <div class="col-sm-12">
+                                    <div class="form-group has-placeholder">
+                                        <label for="mobile1">Mobile<span class="required">*</span></label>
+                                        <input type="text" id="mobile1" class="form-control" name="mobile" value="" aria-required="true" placeholder="Mobile">
+                                        <img class="register-input-icons" src="img/phone.png" alt="" width="18" >
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group has-placeholder">
-                                    <label for="newpass1">New Password<span class="required">*</span></label>
-                                    <input type="password" id="newpass1" class="form-control" name="password"  value="" aria-required="true" placeholder="New Password">
-                                    <i id="reg_pwd_show_btn" class="fa fa-eye pwd_show_eye" aria-hidden="true"></i>
+                                <div class="col-sm-12">
+                                    <div class="form-group has-placeholder">
+                                        <label for="newpass1">New Password<span class="required">*</span></label>
+                                        <input type="password" id="newpass1" class="form-control" name="password"  value="" aria-required="true" placeholder="New Password">
+                                        <img class="register-input-icons" src="img/padlock.png" alt="" width="18" >
+                                        <i id="reg_pwd_show_btn" class="fa fa-eye pwd_show_eye" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="mb-10"></div>
 
-                                <div class="row">
+                                <div class="row registration-genter">
                                     <div class="col-sm-4 text-center mb-0">
                                         <input id="Female" type="radio" class="input-radio" name="gender" value="2"  checked >
                                         <label class="mb-0" for="Female">
@@ -240,7 +199,10 @@
 
                             <div class="col-sm-12 mb-0 text-center">
                                 <div class="form-group">
-                                    <input class="btn login-btn" type="submit" value="Sign Up">
+                                    <!-- <input class="btn login-btn" type="submit" value="Sign Up"> -->
+                                    <a href="register.html" class="btn btn-maincolor2 medium-btn">Register</a>
+                                    <input type="hidden" name="_token" value="GuxyNivzHjvcJntL1heg83S7BTGwu1FNGZxA3sSh"> 
+                                    <input type="submit" class="woocommerce-Button btn login-btn" name="login" value="Login">                                    
                                 </div>
                             </div>
 
@@ -261,64 +223,7 @@
 </section>
 
 
-			<footer class="page_footer footer-1 text-center text-sm-left  ds s-pt-60 s-pb-30 c-mb-30 s-bordertop">
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
 
-            <div class="col-xl-2 col-12 text-xl-left text-center  animate" data-animation="fadeInUp">
-                <a href="index.html" class="logo">
-                    <img src="img/logo.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-xl-8 col-12 text-center animate" data-animation="fadeInUp">
-
-                <div class="widget widget_nav_menu">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-
-                        <li>
-                            <a href="courses.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="blog-right.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="shop-right.html">Shop</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-2 col-12 text-center text-xl-right animate" data-animation="fadeInUp">
-                <span class="social-icons">
-                    <a href="#" class="fab fab fa-facebook-f @iconClass" title="facebook"></a>
-                    <a href="#" class="fab fa-telegram-plane @iconClass" title="telegram"></a>
-                    <a href="#" class="fab fa-linkedin-in @iconClass" title="linkedin"></a>
-                    <a href="#" class="fab fa-instagram @iconClass" title="instagram"></a>
-                </span>
-            </div>
-
-        </div>
-    </div>
-</footer>
-
-
-<section class="page_copyright copyright1 ds s-pt-70 s-pb-60 s-bordertop">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-12 text-center">
-
-                <p>&copy; Copyright <span class="copyright_year">2021</span> All Rights Reserved</p>
-            </div>
-
-        </div>
-    </div>
-</section>
 		</div><!-- eof #box_wrapper -->
 	</div><!-- eof #canvas -->
 
