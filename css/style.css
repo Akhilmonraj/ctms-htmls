@@ -273,6 +273,9 @@ a.event-link:hover{
     border: 1px solid #bfc9d4 !important;
 }
 
+.ls{
+    background-color: #e9edf3;
+}
 
 /* Login */
 
@@ -300,7 +303,7 @@ a.event-link:hover{
 
 .login-wrap .container .entry-content .logo img{
     margin: 0 auto 25px;
-    width: 250px;
+    width: 285px;
     height: 100%;
     max-height: none;
 }
@@ -363,8 +366,13 @@ a.event-link:hover{
     font-size: 1.75rem;
 }
 
+.register-wrap .special-title .sub-title{
+    font-size: 24px;
+}
+
 .register-wrap .special-title h2.special-heading{
     color: #fff;
+    font-size: 48px;
 }
 
 .register-wrap .special-title {
@@ -402,7 +410,7 @@ a.event-link:hover{
 .upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content{
     /* box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1) !important; */
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
-    background-color: #ffffff !important;
+    background-color: #051422 !important;
     border-radius: 20px !important;
     width: 90%;
     margin: -105px auto 0;
@@ -411,6 +419,15 @@ a.event-link:hover{
     min-height: 375px;
     transition: all 0.3s ease;
 }
+
+.upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content h6 a{
+    color: #e7c900;
+}
+.upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content p{
+    color: #fff;
+}
+
+
 
 .upcoming-chess-grid-list-wrap .owl-carousel .owl-item:hover .item-content{
     transform: translateY(-25px);
@@ -425,13 +442,20 @@ a.event-link:hover{
     margin-top: 15px;
 }
 
+.upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content .item-footer span{
+    color: #e7c900;
+}
+
 .upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content .item-footer .btn-upcoming-readmore{
     border: solid 1px #e7c900;
     margin-top: 15px;
-    background-color: #e7c900;
+    /* background-color: #e7c900; */
     color: #fff;
 }
 
+.upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content .item-footer .btn-upcoming-readmore:hover{
+    background-color: #e7c900;
+}
 .upcoming-chess-grid-list-wrap .owl-carousel .owl-item .ls{
     background-color: transparent;
 }
@@ -442,7 +466,7 @@ a.event-link:hover{
 }
 
 .upcoming-chess-white-space{
-    background-color: #f1f6fd;
+    background-color: #f1f2f6;
 }
 
 .upcoming-chess-white-space .container{
@@ -473,21 +497,21 @@ a.event-link:hover{
 }
 
 .Profile-wrap-section  .profile-content .profile-user-area{
-    background-color: #edf2f9;
+    background-color: #ffffff;
     width: 100%;
     display: flex;
-    padding: 25px;
+    padding: 10px 25px;
     border-radius: 15px;
     margin-bottom: 45px;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
     border: solid 1px #e7eaec;
-    border-bottom: solid 1px #dfc305;
+    
 }
 
 .Profile-wrap-section  .profile-content .profile-user-area .img-wrap{
-    width: 100px;
+    width: 150px;
 }
 
 .Profile-wrap-section  .profile-content .profile-user-area .post-edit-link{
@@ -510,14 +534,14 @@ a.event-link:hover{
 }
 
 .Profile-wrap-section  .profile-content .profile-user-details{
-    background-color: #edf2f9;
+    background-color: #ffffff;
     width: 100%;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
     border: solid 1px #e7eaec;
     border-radius: 15px;
     margin-bottom: 45px;
     padding: 25px;
-    border-bottom: solid 1px #dfc305;
+    
 }
 
 .Profile-wrap-section .entry-header{
@@ -537,14 +561,14 @@ a.event-link:hover{
 }
 
 .Profile-wrap-section  .profile-content .edit-account .edit-account-inner{
-    background-color: #edf2f9;
+    background-color: #ffffff;
     width: 100%;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
     border: solid 1px #e7eaec;
     border-radius: 15px;
     margin-bottom: 45px;
     padding: 55px 35px;
-    border-bottom: solid 1px #dfc305;
+    
 }
 
 .Profile-wrap-section  .profile-content .edit-account {
@@ -616,7 +640,7 @@ a.event-link:hover{
 }
 
 .player-wrap .player-content .edit-account .edit-account-inner {
-    background-color: #edf2f9;
+    background-color: #ffffff;
     width: 100%;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
     border: solid 1px #e7eaec;
@@ -626,7 +650,7 @@ a.event-link:hover{
     border-radius: 15px;
     margin-bottom: 45px;
     padding: 55px 35px;
-    border-bottom: solid 1px #dfc305;
+    
 }
 
 .player-wrap .player-content .edit-account .edit-account-inner input {
@@ -635,7 +659,241 @@ a.event-link:hover{
     border: 1px solid #bfc9d4 !important;
 }
 
+.player-gender-wrap label{
+    margin-right: 15px;
+}
 
+.profile-id a{
+    font-weight: 500;
+}
+
+.profile-user-area .row{
+    width: 100%;
+}
+
+.profile-user-area .row .profile-edit-back{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* My wallet */
+
+.my-wallet-wrap{
+
+}
+
+.my-wallet-wrap .entry-header{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.my-wallet-wrap .entry-header:after{
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+}
+
+
+.my-wallet-balance{
+    background-color: #051422;
+    width: 100%;
+    display: flex;
+    padding: 45px 90px !important;
+    border-radius: 15px !important;
+    margin-bottom: 45px;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.my-wallet-balance img{
+    position: absolute;
+    right: -20px;
+    width: 180px;
+    height: auto;
+    opacity: 0.1;
+    top: -40px;
+}
+
+.my-wallet-balance h3{
+    width: 100%;
+    color: #e7c900;
+    margin: 25px 0; 
+}
+
+.my-wallet-balance h6{
+    width: 100%;
+    color: #fff;
+    margin: 10px 0; 
+    font-weight: 400;
+}
+
+.my-wallet-balance #add_wallet_money{
+    background: #fff;
+    border-color: #fff;
+    margin-top: 15px;
+}
+
+.my-wallet-bank-details{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    padding:45px 40px !important;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.my-wallet-bank-details img{
+    position: absolute;
+    right: 27px;
+    width: 110px;
+    height: auto;
+    opacity: 0.1;
+    bottom: 25px;
+}
+
+.my-wallet-bank-details form p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.my-wallet-bank-details form p:last-child{
+    margin-bottom: 0;
+}
+
+.my-wallet-bank-details address{
+    margin: 0;
+} 
+
+.my-wallet-bank-details #bank_info_btn{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+
+.wallet-transfer-money{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 25px;
+}
+
+.wallet-trasfer-wrap{ 
+    display: flex;
+}
+
+.wallet-trasfer-wrap input{
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+} 
+
+.wallet-withdraw-money{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 25px;
+}
+
+.wallet-withdraw-money .wallet-withdraw-money-title{
+    margin-bottom: 60px !important;
+    position: relative;
+    margin-top:35px !important;
+}
+
+.wallet-withdraw-money .wallet-withdraw-money-title:after{
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 30px;
+    border-radius: 5px;
+}
+
+.wallet-transfer-money-title{
+    margin-bottom: 60px !important;
+    position: relative;
+    margin-top:35px !important;
+}
+
+.wallet-transfer-money-title:after{
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 30px;
+    border-radius: 5px;
+}
+
+.wallet-withdraw-wrap input{
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+    margin-bottom: 15px;
+} 
+
+.wallet-recent-deposit-table{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 25px;
+}
+
+
+.recent-deposite-title{
+    margin-bottom: 60px !important;
+    position: relative;
+}
+
+.recent-deposite-title:after{
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.profile-gender-wrap{
+    margin-bottom: 15px;
+}
+
+.profile-gender-wrap label {
+    margin-right: 15px;
+}
 
 /* Responsive Styling */
 @media (max-width: 1199px){
@@ -671,6 +929,10 @@ a.event-link:hover{
     .Profile-wrap-section .profile-content{
         width: 100%;
     }
+
+    .container{
+        padding-top: 150px;
+    }
 }
 
 @media (max-width: 767px){
@@ -705,6 +967,10 @@ a.event-link:hover{
         display: flex;
         margin-bottom: 10px !important;
     }
+
+    .player-wrap .player-content{
+        width: 100%;
+    }
 }
 
 @media (max-width: 575px){
@@ -715,6 +981,10 @@ a.event-link:hover{
     .Profile-wrap-section .container{
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .container {
+        padding-top: 45px !important;
     }
 }
 
@@ -760,6 +1030,54 @@ a.event-link:hover{
     .page_slider [class*="row"]{
         height: auto;
     }
+    
+    .my-wallet-balance{
+        padding: 45px 40px !important;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .wallet-transfer-money{
+        margin-bottom: 0;
+    }
+
+    .wallet-withdraw-money{
+        margin-bottom: 0;
+    }
+
+    .my-wallet-wrap .entry-header{
+        margin-bottom: 5px;
+    }
+
+    .my-wallet-bank-details #bank_info_btn{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 25px;
+    }
+
+    .my-wallet-bank-details{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .my-wallet-bank-details{
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .my-wallet-bank-details img{
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
+
+    .recent-deposite-title{
+        margin-top: 0 !important;
+    }
 }
 
 @media (max-width: 480px){
@@ -783,6 +1101,24 @@ a.event-link:hover{
     .Profile-wrap-section .profile-content .profile-user-details table tbody tr td{
         padding: 5px 0px;
         border: none;
+    }
+
+    .Profile-wrap-section .profile-content .profile-user-area{
+        flex-direction: column;
+    }
+
+    .Profile-wrap-section .profile-content .profile-user-area .post-edit-link{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .profile-gender-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-gender-wrap label{
+        margin-bottom: 15px !important;
     }
 
 }
