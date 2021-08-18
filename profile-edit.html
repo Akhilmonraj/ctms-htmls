@@ -299,10 +299,6 @@
                 <article>
                     <header class="entry-header">
                         <h1 class="entry-title">Update Account details</h1>
-                        <span class="edit-link">
-                            <a class="post-edit-link btn profile-back" href="https://chessmii.com/user/profile">Back
-                            </a>
-                        </span>
                     </header>
                     <!-- .entry-header -->
                     <div class="entry-content">
@@ -312,6 +308,29 @@
                             <div class="woocommerce-MyAccount-content" style="width: 100%;">
 
                                 <form class="woocommerce-EditAccountForm edit-account" action="https://chessmii.com/user/profile/update" method="post" enctype="multipart/form-data">
+									<div class="profile-user-area">
+										<div class="row">
+											<div class="small-12 medium-2 large-2 columns col-md-6" title="Upload your photo less than 2 MB">
+												<div class="avatar-circle">
+													<!-- User Profile Image -->
+													<img class="profile-pic" src="https://chessmii.com/uploads/profile/no-profile-pic.png">
+												</div>
+												<div class="p-image">
+													<i class="fa fa-camera pro-pic-upload-button"></i>
+													<input class="pro-pic-file-upload " type="file" name="profile_pic" accept="image/*" />
+												</div>
+											</div>
+											<div class="col-md-6 profile-edit-back">
+												<span class="edit-link">
+													<a class="post-edit-link btn profile-back" href="https://chessmii.com/user/profile">Back
+													</a>
+												</span>
+											</div>
+										</div>
+									</div>
+
+									
+									
 									<div class="edit-account-inner">
 										<div class="row">
 											<input type="hidden" name="_token" value="Vm4w7CtGFF61Q4ULiFMLw6IQKwiVd1jkKTGAuIej">                                    
@@ -327,29 +346,32 @@
 											<input type="date" max="2016-08-16" min="1900-08-16" class="" name="dob" id="dob" value="" placeholder="" />
 										</p>
 	
-										<p class="woocommerce-form-row woocommerce-form-row--wide form-row-wide col-md-12">
+										<div class="woocommerce-form-row woocommerce-form-row--wide form-row-wide col-md-12">
+											<div class="form-group">
+												<label for="dob" style="width: 100%;">Gender <span class="required">*</span>
+												</label>
+
+												<div class="profile-gender-wrap">
+													<input id="Female" type="radio" class="input-radio " name="gender" value="2" checked="">
+													<label class="mb-0" for="Female">
+													Female
+													</label>
+		
+		
+													<input id="Male" type="radio" class="input-radio " name="gender" value="1">
+													<label class="mb-0" for="Male">
+													Male
+													</label>
+		
+		
+													<input id="Custom" type="radio" class="input-radio " name="gender" value="0">
+													<label class="mb-0" for="Custom">
+													Others
+													</label>
+												</div>
+											</div>
 	
-											<label for="dob">Gender <span class="required">*</span>
-											</label>
-	
-											<input id="Female" type="radio" class="input-radio " name="gender" value="2"  />
-											<label class="mb-0" for="Female">
-												Female
-											</label>
-	
-	
-											<input id="Male" type="radio" class="input-radio " name="gender" value="1"  checked  />
-											<label class="mb-0" for="Male">
-												Male
-											</label>
-	
-	
-											<input id="Custom" type="radio" class="input-radio " name="gender" value="0"  />
-											<label class="mb-0" for="Custom">
-												Others
-											</label>
-	
-										</p>
+										</div>
 										<p class="woocommerce-form-row woocommerce-form-row--wide  form-row-wide col-md-6">
 											<label for="tel">Mobile <span class="required">*</span>
 											</label>
@@ -378,7 +400,7 @@
 											<input type="text" class="" name="state" id="state" value="" placeholder="" />
 										</p>
 	
-										<p class="woocommerce-form-row woocommerce-form-row--first  form-row-first col-md-6">
+										<p class="woocommerce-form-row woocommerce-form-row--first  form-row-first col-md-6 text-left">
 											<label for="country">Country <span class="required">*</span>
 											</label>
 											<input type="text" class="" name="country" id="country" value="" placeholder="" />
@@ -391,18 +413,6 @@
 									</header>
 
 									<div class="edit-account-inner">
-											<div class="row">
-												<div class="small-12 medium-2 large-2 columns" title="Upload your photo less than 2 MB">
-													<div class="avatar-circle">
-														<!-- User Profile Image -->
-														<img class="profile-pic" src="https://chessmii.com/uploads/profile/no-profile-pic.png">
-													</div>
-													<div class="p-image">
-														<i class="fa fa-camera pro-pic-upload-button"></i>
-														<input class="pro-pic-file-upload " type="file" name="profile_pic" accept="image/*" />
-													</div>
-												</div>
-											</div>
 <div class="row">
 	<div class="col-md-6">
 		<p class="woocommerce-form-row woocommerce-form-row--first  form-row-first">
