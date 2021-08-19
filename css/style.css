@@ -264,13 +264,13 @@ a.event-link:hover{
 .login-wrap input:not(.button){
     border-radius: 5px !important;
     background-color: #fff !important;
-    border: 1px solid #bfc9d4 !important;
+    border: 1px solid #bfc9d4;
 }
 
 .register-wrap input:not(.login-btn){
     border-radius: 5px !important;
     background-color: #fff !important;
-    border: 1px solid #bfc9d4 !important;
+    border: 1px solid #bfc9d4;
 }
 
 .ls{
@@ -278,7 +278,16 @@ a.event-link:hover{
 }
 
 .has-error{
-    border-color: red !important;
+    border: solid 1px red !important;
+}
+
+.has-error-content{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+    display: inline-block;
+    text-align: left;
 }
 
 /* Login */
@@ -333,7 +342,7 @@ a.event-link:hover{
 
 .login-wrap .container .entry-content form .login-input-icon{
     float: left;
-    top: -33px;
+    top: 35px;
     position: relative;
     left: 13px;
 }
@@ -394,7 +403,7 @@ a.event-link:hover{
 
 .register-wrap .register-input-icons{
     float: left;
-    top: -33px;
+    top:35px;
     position: relative;
     left: 13px;
 }
