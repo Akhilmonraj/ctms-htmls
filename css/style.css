@@ -277,6 +277,10 @@ a.event-link:hover{
     background-color: #e9edf3;
 }
 
+.has-error{
+    border-color: red !important;
+}
+
 /* Login */
 
 .login-wrap{
@@ -895,6 +899,524 @@ a.event-link:hover{
     margin-right: 15px;
 }
 
+.transaction-history-wrap .transaction-history-title{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.transaction-history-wrap .transaction-history-title::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+
+}
+
+.transaction-history-table{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 55px 35px;
+}
+
+.transaction-history-wrap .my-wallet-balance{
+    height: auto;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-title{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-title::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner {
+    margin-bottom: 55px;
+}
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-media{
+    height: 350px;
+    border-radius: 15px;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content{
+    /* box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09); */
+    /* background-color: #051422 !important; */
+    background-color: #ffffff;
+    border-radius: 20px !important;
+    width: 90%;
+    margin: -105px auto 0;
+    z-index: 9;
+    position: relative;
+    min-height: 375px;
+    transition: all 0.3s ease;
+    padding: 55px 50px;
+    text-align: center;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner:hover .item-content {
+    transform: translateY(-25px);
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content h6 a {
+    color: #e7c900;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content  p {
+    color: #051422;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content  .item-footer {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content  .item-footer span.price {
+    color: #e7c900;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    opacity: 1;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content  .item-footer .btn-upcoming-readmore{
+    border: solid 1px #e7c900;
+    background-color: #e7c900;
+    margin-top: 15px;
+    color: #051422;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-grid-inner .item-content  .item-footer .btn-upcoming-readmore:hover {
+    background-color: transparent;
+}
+
+
+
+.tournment-create-new-wrap .tournment-create-new-title{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.tournment-create-new-wrap .tournment-create-new-title::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+
+}
+
+.tournment-create-new-wrap  .tournment-create-new-inner{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 25px;  
+}
+
+.tournment-create-new-wrap  .tournment-create-new-inner input{
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+}
+
+.tournment-create-new-wrap  .tournment-create-new-inner textarea, .tournment-create-new-wrap  .tournment-create-new-inner select{
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+}
+
+.tournment-created-by-me-wrap .tournment-created-by-me-title{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.tournment-created-by-me-wrap .tournment-created-by-me-title::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+
+}
+
+.tournment-created-by-me-wrap .tournment-created-by-me-table{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 25px;  
+}
+
+
+.tournment-upcoming-view-wrapper .tournment-upcoming-view-title{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.tournment-upcoming-view-wrapper .tournment-upcoming-view-title::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.tournment-upcoming-view-wrapper .tournment-title-price{
+    background-color: #051422;
+    width: 100%;
+    display: flex;
+    padding: 45px 90px 45px 165px!important;
+    border-radius: 15px !important;
+    margin-bottom: 45px;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.tournment-upcoming-view-wrapper .tournment-title-price p{
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.tournment-upcoming-view-wrapper .tournment-title-price h4{
+    margin-top: 10px;
+    color: #e7c900;
+}
+
+.tournment-upcoming-view-wrapper .tournment-title-price img {
+    position: absolute;
+    left: 63px;
+    width: 84px;
+    height: auto;
+    top: 50%;
+    transform: rotate(-30deg) translateY(-50%);
+}
+
+.tournment-upcoming-view-pdf-img{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 55px 35px;
+    display: inline-block;
+}
+
+.tournment-upcoming-view-pdf-img select{
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    border: 1px solid #bfc9d4 !important;
+    margin-left: 15px;
+}
+
+.tournment-upcoming-view-pdf-img .images .flex-viewport{
+    border-radius: 15px;
+}
+
+.tournment-upcoming-view-pdf-img .images .flex-control-nav{
+    margin-top: 15px;
+    display: flex;
+}
+
+.tournment-upcoming-view-pdf-img .images .flex-control-nav li{
+    flex: 1;
+    padding: 0px 15px;
+}
+
+.tournment-upcoming-view-pdf-img .summary {
+    background-color: #e9edf3;
+    border-radius: 15px;
+    padding: 25px 55px;
+    border: solid 1px #dddedf;
+} 
+
+.tournment-upcoming-view-pdf-img .summary  p.h6{
+    color: #071625;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 15px;
+}
+
+.tournment-upcoming-view-pdf-img .summary  p.h6::before{
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    content: "";
+    background-color: #e7c900;
+    left: -25px;
+    border-radius: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tournment-upcoming-view-pdf-img .summary  p.h4{
+    color: #9b8700;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+.tournment-upcoming-view-pdf-img .summary #btn_register{
+    background-color: #e7c900;
+    border-color: #e7c900;
+    margin-left: 15px;
+}
+
+.tournment-upcoming-view-pdf-img .summary #btn_register:hover{
+    background-color: transparent;
+}
+
+
+.created-by-me-view-wrap .created-by-me-view-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.created-by-me-view-wrap .created-by-me-view-title h5{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.created-by-me-view-wrap .created-by-me-view-title h5::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+}
+
+
+.cbme-registered-player{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 55px 35px;
+}
+
+.cbme-registered-player-titles{
+    display: flex;
+flex-wrap: wrap;
+}
+
+.cbme-registered-player-titles .entry-title{     
+    font-weight: 400;
+    font-size: 20px;
+    background: #e9edf3;
+    margin-right: 37px;
+    padding: 15px 0 15px 45px;
+    color: #6c757d;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cbme-registered-player-titles .entry-title:before{ 
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    content: "";
+    top: 10px;
+    left: 10px;
+    border-radius: 50px;
+    box-shadow: inset 0 3px 1px 0 rgba(102, 102, 255, 0.3) !important;
+}
+
+/* .cbme-registered-player-titles .entry-title:after{ 
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    content: "";
+    top: 10px;
+    right: 10px;
+    border-radius: 50px;
+    box-shadow: inset 0 3px 1px 0 rgba(102, 102, 255, 0.3) !important;
+} */
+
+.entry-title-heading{
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 39px;
+    font-size: 25px;
+}
+
+.cbme-registered-player-titles .entry-title span{
+    background: #e7c900;
+    padding: 25px;
+    margin-left: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.created-by-me-view-wrap .cbme-registered-player .btn{
+    background-color: #051422;
+    border: 2px solid #051422;
+    margin-top: 20px;
+}
+
+.created-by-me-view-wrap .cbme-registered-player .btn:hover{
+    background-color: transparent;
+    color: #051422;
+}
+
+.created-by-me-view-wrap .created-by-me-view-title .btn-new-tournment{
+    background-color: #e7c900;
+    border: 2px solid #e7c900;
+    border-radius: 5em;
+    color: #1f232b;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    min-width: 170px;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.created-by-me-view-wrap .created-by-me-view-title .btn-new-tournment:hover{
+    background-color: transparent;
+}
+
+.cbme-player-list .refund-request{
+    background-color: transparent !important;
+    color: #dc3545;
+    border-color: transparent !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cbme-player-list .refund-btn{
+    background-color: #e7c900 !important;
+    border: 2px solid #e7c900 !important;
+    border-radius: 5em;
+    color: #1f232b;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    min-width: 170px;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.cbme-player-list .refund-btn:hover{
+    background-color: transparent !important;
+}
+
+
+
+.player-list-wrap  .tournment-upcoming-title{
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.player-list-wrap  .tournment-upcoming-title::after {
+
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    border-radius: 5px;
+
+}
+
+.player-list-wrap-inner{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    padding: 55px 35px;
+}
+
+.player-list-wrap .player-list-item{
+    background-color: #031221;
+    padding: 25px;
+    border-radius: 15px;
+    padding-top: 0;
+    margin-bottom: 25px;
+}
+.player-list-wrap .player-list-item .date{
+    color: #fff;
+    background: rgba(225, 225, 225, 0.1);
+    padding: 10px 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.player-list-wrap .player-list-item h5{
+    margin: 15px 0 0;
+    color: #e7c900;
+    font-size: 25px;
+}
+
+
+
 /* Responsive Styling */
 @media (max-width: 1199px){
 
@@ -933,6 +1455,31 @@ a.event-link:hover{
     .container{
         padding-top: 150px;
     }
+
+    .tournment-width{
+        max-width: unset;
+        flex: unset;
+        width: 50%;
+    }
+
+    .upcoming-view-img-slider-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .upcoming-view-img-slider-wrap .images{
+        width: 100%;
+    }
+
+    .upcoming-view-img-slider-wrap .summary {
+        width: 100%;
+    }
+
+    .col-resp{
+        width: 100%;
+        max-width: 100%;
+        flex: unset;
+    }
 }
 
 @media (max-width: 767px){
@@ -946,6 +1493,36 @@ a.event-link:hover{
 
     .register-wrap .align-items-center > .col-md-6.special-title{
         text-align: center;
+    }
+
+    .tournment-width{
+        max-width: unset;
+        flex: unset;
+        width: 100%;
+    }
+
+    .cbme-registered-player input[type="submit"]{
+        margin: 15px 0;
+    }
+
+    .cbme-registered-player-titles .entry-title{
+        height: 168px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+        width: 100%;
+        padding-top: 35px;
+    }
+
+    .cbme-registered-player-titles .entry-title span{
+        width: 100%;
+        height: 72px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        margin-left: 0;
     }
 }
 
@@ -985,6 +1562,12 @@ a.event-link:hover{
 
     .container {
         padding-top: 45px !important;
+    }
+
+    .created-by-me-view-wrap .created-by-me-view-title{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 25px;
     }
 }
 
@@ -1078,6 +1661,9 @@ a.event-link:hover{
     .recent-deposite-title{
         margin-top: 0 !important;
     }
+    .transaction-history-wrap .my-wallet-balance{
+        margin-bottom: 45px;
+    }
 }
 
 @media (max-width: 480px){
@@ -1120,6 +1706,35 @@ a.event-link:hover{
     .profile-gender-wrap label{
         margin-bottom: 15px !important;
     }
+
+    .upcoming-view-img-slider-wrap{
+        padding: 25px 15px
+    }
+
+    .upcoming-view-img-slider-wrap .summary{
+        padding: 25px 15px
+    }
+
+    .tournment-upcoming-view-pdf-img .summary p.h6::before{
+        display: none;
+    }
+
+    .tournment-upcoming-view-pdf-img select{
+        margin: 0;
+    }
+
+
+    .tournment-upcoming-view-wrapper .tournment-title-price img{
+        top: 10px;
+        transform: translate(0) rotate(-30deg);
+        left: 15px;
+        width: 40px;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-title-price{
+        padding: 25px 25px 25px 75px !important;
+    }
+
 
 }
 
