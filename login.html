@@ -88,14 +88,18 @@
                     <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                         <label for="username">Email <span class="required">*</span>
                         </label>
-                        <input type="text" value="" class="woocommerce-Input woocommerce-Input--text input-text " name="email" id="username" value="" placeholder="Email">
-                        <img class="login-input-icon" src="img/user.png" alt="" width="18">
+						<img class="login-input-icon" src="img/user.png" alt="" width="18">
+                        <input type="text" value="" class="woocommerce-Input woocommerce-Input--text input-text has-error" name="email" id="username" value="" placeholder="Email">
+						<span class="has-error-content">Please provide a valid username. </span>	
                     </p>
+
+					
                     <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                         <label for="password5675">Password <span class="required">*</span>
                         </label>
+						<img class="login-input-icon" src="img/padlock.png" alt="" width="18">
                         <input class="woocommerce-Input woocommerce-Input--text input-text " type="password" name="password" id="password5675" placeholder="Password">
-                        <img class="login-input-icon" src="img/padlock.png" alt="" width="18">
+                        
                         <i id="pwd_show_btn" class="fa fa-eye pwd_show_eye" aria-hidden="true"></i>
                     </p>
 
