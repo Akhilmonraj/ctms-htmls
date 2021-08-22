@@ -692,10 +692,6 @@ a.event-link:hover{
 
 /* My wallet */
 
-.my-wallet-wrap{
-
-}
-
 .my-wallet-wrap .entry-header{
     margin-bottom: 60px;
     position: relative;
@@ -1424,6 +1420,11 @@ flex-wrap: wrap;
     font-size: 25px;
 }
 
+/* Tab styling */
+.tournment-tab-wrap .nav-tabs {
+    display:none;
+}
+
 
 
 /* Responsive Styling */
@@ -1491,6 +1492,31 @@ flex-wrap: wrap;
     }
 }
 
+
+@media(min-width:768px) {
+
+    /* Tab style */
+    .tournment-tab-wrap .nav-tabs {
+        display: flex;
+    }
+    
+    .tournment-tab-wrap .card {
+        border: none;
+    }
+
+    .tournment-tab-wrap .card .card-header {
+        display:none;
+    }  
+
+    .tournment-tab-wrap .card .collapse{
+        display:block;
+    }
+
+    .tournment-tab-wrap  .card-body{
+        padding: 0;
+    }
+}
+
 @media (max-width: 767px){
     .login-wrap .container .entry-content{
         max-width: 85%;
@@ -1533,6 +1559,68 @@ flex-wrap: wrap;
         margin: 0;
         margin-left: 0;
     }
+
+    /* Tab style */
+
+    .tournment-tab-wrap .tab-content > .tab-pane {
+        display: block !important;
+        opacity: 1;
+    }
+
+    .tournment-tab-wrap .tab-content{
+        padding: 0;
+        border: none;
+    }
+
+    .card-header h5{
+        background-color: #eee;
+    }
+
+    .card-header h5 a{
+        padding-left: 20px !important;
+    }
+
+    .card-header h5 a:before{
+        display: none !important;
+    }
+
+    .card-header h5 a:after{
+        background-color: transparent !important;
+    }
+
+
+    .tournment-tab-wrap .tab-content > .tab-pane .card-header h5{
+        background-color: #eee;
+    }
+
+    .tournment-tab-wrap .tab-content > .tab-pane.card.active  .card-header h5{
+        background-color: #dfc305;
+    }
+
+    .tournment-tab-wrap .tab-content > .tab-pane .card-body{
+        padding: 20px 0;
+    }
+
+    .c-gutter-60 [class*="col-"], .row.c-gutter-60 > [class*="col-"]{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tournment-tab-wrap .tab-content > .tab-pane .card-body button{
+        width: 100%;
+    }
+
+    .tournment-tab-wrap .tab-content > .tab-pane #collapse-D .card-body{
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+
+    .tournment-tab-wrap .tab-content > .tab-pane #collapse-D .card-body #entry_fees_category_div .input-group input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    
 }
 
 @media (max-width: 614px){
@@ -1577,6 +1665,15 @@ flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 25px;
+    }
+
+    .tournment-create-new-wrap > .container > .row{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .tournment-tab-wrap .tab-content > .tab-pane #collapse-D .row .col{
+        flex: unset;
     }
 }
 
