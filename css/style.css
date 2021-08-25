@@ -290,6 +290,9 @@ a.event-link:hover{
     text-align: left;
 }
 
+.mar-l-pad{padding-left: 15px !important;}
+.mar-r-pad{padding-right: 15px !important;}
+
 /* Login */
 
 .login-wrap{
@@ -698,15 +701,21 @@ a.event-link:hover{
     margin-top: 25px;
 }
 
+.my-wallet-wrap .entry-header h1{
+    font-size: 40px;
+    text-align: center;
+}
 .my-wallet-wrap .entry-header:after{
     position: absolute;
     height: 6px;
-    width: 50px;
+    width: 100px;
     background-color: #e7c900;
     content: "";
-    bottom: -20px;
+    bottom: -25px;
     left: 0;
     border-radius: 5px;
+    right: 0;
+    margin: 0 auto;
 }
 
 
@@ -714,7 +723,7 @@ a.event-link:hover{
     background-color: #051422;
     width: 100%;
     display: flex;
-    padding: 45px 90px !important;
+    padding:45px 50px !important;
     border-radius: 15px !important;
     margin-bottom: 45px;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
@@ -723,6 +732,9 @@ a.event-link:hover{
     position: relative;
     overflow: hidden;
     height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .my-wallet-balance img{
@@ -738,6 +750,7 @@ a.event-link:hover{
     width: 100%;
     color: #e7c900;
     margin: 25px 0; 
+    font-size: 65px;
 }
 
 .my-wallet-balance h6{
@@ -745,12 +758,21 @@ a.event-link:hover{
     color: #fff;
     margin: 10px 0; 
     font-weight: 400;
+    font-size: 24px;
 }
 
 .my-wallet-balance #add_wallet_money{
-    background: #fff;
-    border-color: #fff;
-    margin-top: 15px;
+    background: transparent;
+    border-color: #e7c900;
+    margin-top: 37px;
+    height: 50px;
+    border-width: 2px;
+    color: #e7c900;
+}
+
+.my-wallet-balance #add_wallet_money:hover{
+    background-color: #e7c900;
+    color: #1f232b;
 }
 
 .my-wallet-bank-details{
@@ -817,6 +839,50 @@ a.event-link:hover{
     background-color: #fff !important;
     border: 1px solid #bfc9d4 !important;
 } 
+
+.wallet-trasfer-wrap .btn-wrap .form-group {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.wallet-trasfer-wrap input#transfer_btn{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e7c900 !important;
+    border-radius: 5em!important;
+    border: solid 2px #e7c900 !important;
+}
+
+.wallet-trasfer-wrap input#transfer_btn:hover{
+    background-color: transparent !important;
+}
+
+.btn-widthrow-money{
+    height: 100%;
+    width: 100%;
+    min-width: auto;
+    box-sizing: border-box;
+    background-color: #e7c900 !important;
+    border-radius: 5em!important;
+    border: solid 2px #e7c900 !important;
+}
+
+.btn-widthrow-money:hover{
+    background-color: transparent !important;
+}
+
+.star-content{
+    display: flex;
+flex-direction: column;
+}
+
+
+
+
+.my-wallet-wrap .wallet-withdraw-wrap input{
+    margin-bottom: 0;
+}
 
 .wallet-withdraw-money{
     background-color: #ffffff;
@@ -1090,29 +1156,44 @@ a.event-link:hover{
 }
 
 
+.tournment-upcoming-wrapper{
+    background-color: #1f232b;
+}
+
+.tournment-upcoming-wrapper .tournment-upcoming-title h5{
+    color: #fff;
+}
+
 .tournment-upcoming-view-wrapper .tournment-upcoming-view-title{
     margin-bottom: 60px;
     position: relative;
     margin-top: 25px;
+    text-align: center;
+}
+
+.tournment-upcoming-view-wrapper .tournment-upcoming-view-title h5{
+    color: #fff;
+    font-size: 38px;
 }
 
 .tournment-upcoming-view-wrapper .tournment-upcoming-view-title::after {
-
     position: absolute;
     height: 6px;
-    width: 50px;
+    width: 120px;
     background-color: #e7c900;
     content: "";
-    bottom: -20px;
+    bottom: -25px;
     left: 0;
     border-radius: 5px;
+    right: 0;
+    margin: 0 auto;
 }
 
 .tournment-upcoming-view-wrapper .tournment-title-price{
     background-color: #051422;
     width: 100%;
     display: flex;
-    padding: 45px 90px 45px 165px!important;
+    padding: 45px 90px 45px 90px!important;
     border-radius: 15px !important;
     margin-bottom: 45px;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
@@ -1123,13 +1204,17 @@ a.event-link:hover{
 }
 
 .tournment-upcoming-view-wrapper .tournment-title-price p{
-    margin-bottom: 0;
     color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 .tournment-upcoming-view-wrapper .tournment-title-price h4{
-    margin-top: 10px;
     color: #e7c900;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 30px;
 }
 
 .tournment-upcoming-view-wrapper .tournment-title-price img {
@@ -1137,8 +1222,8 @@ a.event-link:hover{
     left: 63px;
     width: 84px;
     height: auto;
-    top: 50%;
-    transform: rotate(-30deg) translateY(-50%);
+    top: 19px;
+    transform: rotate(-30deg);
 }
 
 .tournment-upcoming-view-pdf-img{
@@ -1425,6 +1510,149 @@ flex-wrap: wrap;
     display:none;
 }
 
+.player-list-wrap-inner .row .col-md-4:nth-child(even) .date{
+    background-color: #dfc305;
+    text-align: center;
+    color: #031221;
+}
+
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance{
+    background-color: #051422;
+    width: 75%;
+    display: flex;
+    padding: 45px 50px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
+    border: solid 1px #e7eaec;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 230 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group{
+    width: 100%;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn{
+    margin-top: 0;
+    border-radius: 5em;
+    border-width: 2px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 4px;
+    min-width: 170px;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn.btn-Topup{
+    border: solid 2px #e7c900;
+    color: #e7c900;
+    margin-right: 20px;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn.btn-Topup:hover{
+    background-color: #dfc305;
+    color: #1f232b;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn.btn-Transfer{
+    border: solid 2px #6c757d;
+    color: #fff;
+    background: #6c757d;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn.btn-Transfer:hover{
+    border: solid 2px #fff;
+    color: #fff;
+    background: transparent;
+}
+
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance  img {
+    position: absolute;
+    right: -20px;
+    width: 180px;
+    height: auto;
+    opacity: 0.1;
+    top: -40px;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance  h6 {
+    width: 65%;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h3 {
+    width: 35%;
+    color: #e7c900;
+    margin: 25px 0;
+    font-size: 65px;
+}
+
+.count-balance-wrap{
+    width: 100%;
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: space-between;
+}
+
+.count-balance-wrap .count-wrap{
+    width: 215px;
+height: 215px;
+    border: solid 12px #e7c900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    flex-direction: column;
+}
+
+.count-balance-wrap .count-wrap p{
+    font-size: 27px;
+text-align: center;
+margin: 0;
+line-height: 34px;
+}
+.count-balance-wrap .count-wrap p.name-d{
+    font-size: 19px;
+    padding: 0 16px;
+    line-height: 23px;
+    margin-bottom: 30px;
+    color: #e7c900;
+ }
+
+ .count-balance-wrap .count-wrap p.count-d{
+    font-size: 60px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.dowmload-player-btn{
+    background-color: #e7c900;
+    border: 2px solid #e7c900;
+    color: #1f232b;
+    padding: 15px 35px;
+}
+
+.dowmload-player-btn:hover{
+    background-color: transparent;
+    border: 2px solid #e7c900;
+    color: #1f232b;
+}
 
 
 /* Responsive Styling */
