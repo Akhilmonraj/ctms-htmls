@@ -312,8 +312,10 @@
 
                         <div class="icon-box  my-wallet-balance">
 							<img src="img/credit-card.png" alt="payment">
-							<h6>Balance</h6>
-                            <h3>237.00 </h3>
+							<div class="my-wallet-balance-twist">
+								<h6>Balance</h6>
+                            <h3>50000 </h3>
+							</div>
                             <button type="button" id="add_wallet_money" class="btn btn-outline-maincolor medium-btn">Add</button>
                         </div>
 
@@ -355,7 +357,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="wallet-transfer-money">
@@ -365,25 +367,27 @@
 											<h5>Transfer Money</h5>
 										</div>
 										<div class="wallet-trasfer-wrap">
-											<div class="col-md-6">
+											<div class="col-md-5 mar-r-pad">
 												<div class="form-group has-placeholder">
 													<label for="transfer_to_user">Send To <span class="required">*</span></label>
 				
 													<input type="text" aria-required="true" size="30" value="" name="transfer_to_user" id="transfer_to_user" class="form-control" placeholder="Recipient Username">
 												</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-4 mar-l-pad">
 												<div class="form-group has-placeholder">
 													<label for="transfer_amount">Money<span class="required">*</span></label>
 													<input type="number" id="transfer_amount" class="form-control" name="transfer_amount" aria-required="true" value="" placeholder="Amount">
 												</div>
 											</div>
-										</div>
-										<div class="col-sm-12  text-center">
+
+											<div class="col-md-3 mar-l-pad  text-center btn-wrap">
 											<div class="form-group text-left">
 												<input class="btn btn-maincolor" id="transfer_btn" type="button" value="Transfer">
 											</div>
 										</div>
+										</div>
+										
 									</form>
 								</div>
 							</div>
@@ -398,16 +402,22 @@
 										<div class="wallet-withdraw-wrap">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<input type="number" id="withdraw_amount" min="100" class="form-control" name="withdraw_amount" aria-required="true" title="Enter amount without decimals" placeholder="Enter amount without decimals">
+													<div class="row">
+														<div class="col-md-9">
+															<input type="number" id="withdraw_amount" min="100" class="form-control" name="withdraw_amount" aria-required="true" title="Enter amount without decimals" placeholder="Enter amount without decimals">
+														</div>
+														<div class="col-md-3 mar-l-pad">
+															<button class="btn btn-maincolor btn-widthrow-money" id="withdraw_btn" type="button" value="">Withdraw</button>
+														</div>
+													</div>												
+												</div>
+												<div class="form-group">
+													<div class="star-content">
 													<label style="margin-top: 12px;" for="withdraw_amount"><span class="required">*</span> Please make sure bank details are added</label>
 													<label><span class="required">*</span> Minimum amount is Rs: 200</label>
 													<label><span class="required">*</span> 10% transaction charge will be deducted</label>
+													</div>
 												</div>
-											</div>
-										</div>
-										<div class="col-sm-12  text-left">
-											<div class="form-group">
-												<input class="btn btn-maincolor" id="withdraw_btn" type="button" value="Withdraw">
 											</div>
 										</div>
 									</form>
