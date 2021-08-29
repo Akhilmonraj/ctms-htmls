@@ -535,7 +535,14 @@ a.event-link:hover{
     justify-content: center;
     color: #000;
     background-color: #dfc305;
-    min-width: 110px;
+    min-width: unset;
+    width: 130px;
+    align-items: center;
+}
+
+
+.Profile-wrap-section  .profile-content .profile-user-area .post-edit-link:hover{
+    border:solid 2px #dfc305;
 }
 
 .Profile-wrap-section  .profile-content .profile-user-area .post-edit-link:before{
@@ -728,13 +735,13 @@ a.event-link:hover{
     margin-bottom: 45px;
     box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
     border: solid 1px #e7eaec;
-    display: block;
     position: relative;
     overflow: hidden;
     height: 300px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .my-wallet-balance img{
@@ -764,7 +771,7 @@ a.event-link:hover{
 .my-wallet-balance #add_wallet_money{
     background: transparent;
     border-color: #e7c900;
-    margin-top: 37px;
+    margin-top: 5px;
     height: 50px;
     border-width: 2px;
     color: #e7c900;
@@ -797,13 +804,27 @@ a.event-link:hover{
     width: 110px;
     height: auto;
     opacity: 0.1;
-    bottom: 25px;
+    top: 65px;
 }
 
 .my-wallet-bank-details form p{
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
+}
+
+.my-wallet-bank-details form p input{
+    padding: 0px 15px;
+    border: 1px solid #bfc9d4;
+    border-radius: 5px;
+    background: transparent;
+    width: 80%;
+}
+
+.my-wallet-bank-details #bank_info_edit_close_btn{
+    position: absolute;
+    right: 20px;
+    top: 25px;
 }
 
 .my-wallet-bank-details form p:last-child{
@@ -816,8 +837,8 @@ a.event-link:hover{
 
 .my-wallet-bank-details #bank_info_btn{
     position: absolute;
-    top: 30px;
-    right: 35px;
+    bottom: 30px;
+    right: 25px;
 }
 
 .wallet-transfer-money{
@@ -1117,13 +1138,11 @@ flex-direction: column;
 .tournment-create-new-wrap  .tournment-create-new-inner input{
     border-radius: 5px !important;
     background-color: #fff !important;
-    border: 1px solid #bfc9d4 !important;
 }
 
 .tournment-create-new-wrap  .tournment-create-new-inner textarea, .tournment-create-new-wrap  .tournment-create-new-inner select{
     border-radius: 5px !important;
     background-color: #fff !important;
-    border: 1px solid #bfc9d4 !important;
 }
 
 .tournment-created-by-me-wrap .tournment-created-by-me-title{
@@ -1534,6 +1553,7 @@ flex-wrap: wrap;
     align-items: center;
     margin-bottom: 0px;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group{
     width: 100%;
@@ -1607,6 +1627,7 @@ flex-wrap: wrap;
     display: flex;
     margin-bottom: 45px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .count-balance-wrap .count-wrap{
@@ -1631,7 +1652,7 @@ line-height: 34px;
     font-size: 19px;
     padding: 0 16px;
     line-height: 23px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     color: #e7c900;
  }
 
@@ -1654,10 +1675,99 @@ line-height: 34px;
     color: #1f232b;
 }
 
+.upcoming-chess-home-wrap .special-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-chess-home-wrap .special-heading a.btn{
+    border-radius: 50px;
+    background: transparent;
+    border: solid 2px #e7c900;
+    height: 60px;
+}
+
+.upcoming-chess-home-wrap .special-heading a.btn:hover{
+    background: #e7c900;
+    color: #1f232b;
+}
+
+.upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content h{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content h a{
+    color: #e7c900;
+    font-size: 20px;
+} 
+
+.Profile-wrap-section .profile-content .profile-user-area .profile-id-img-wrap .profile-id{
+    display: flex;
+    flex-direction: column;
+}
+.Profile-wrap-section .profile-content .profile-user-area .profile-id-img-wrap .profile-id .profile-view-sec{
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+.my-wallet-wrapper-skin{
+    width: 100%;
+    display: flex;
+}
+
+.tournment-upcoming-view-wrapper .products .product:hover .product_type_simple{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.player-content-wrap{
+    width: 100%;
+}
+
+
 
 /* Responsive Styling */
 @media (max-width: 1199px){
+    .upcoming-chess-home-wrap .special-heading span{
+        text-align: left;
+    }
 
+    .upcoming-chess-white-space{
+        display: none;
+    }
+
+    .my-wallet-balance{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-wallet-balance #add_wallet_money{
+        margin-top: 0;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance{
+        flex-direction: row;
+        height: auto;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h3{
+        width: 100%;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h6{
+        width: 100%;
+    }
+
+    
 }
 
 @media (max-width: 1024px){
@@ -1718,7 +1828,66 @@ line-height: 34px;
         max-width: 100%;
         flex: unset;
     }
-}
+
+    .tournment-upcoming-view-wrapper .tournment-title-price{
+        padding: 25px !important;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-title-price img{
+        width: 40px;
+        left: 25px;
+    }
+
+    .my-wallet-wrapper-skin{
+        flex-direction: column;
+    }
+
+    .my-wallet-wrapper-skin .col-md-6{
+        max-width: 100%;
+    }
+
+    .my-wallet-balance{
+        margin: 0;
+    }
+
+    .wallet-trasfer-wrap .col-md-5{
+        max-width: 50%;
+        flex: unset;
+    }
+
+    .wallet-trasfer-wrap .col-md-4{
+        max-width: 50%;
+        flex: unset;
+    }
+
+    .wallet-trasfer-wrap{
+        flex-wrap: wrap;
+    }
+
+    .wallet-trasfer-wrap .btn-wrap .form-group{
+        padding-left: 15px;
+    }
+
+    .wallet-withdraw-wrap .mar-l-pad{
+        max-width: 100%;
+    }
+
+    .wallet-withdraw-wrap .mar-l-pad #withdraw_btn{
+        margin-left: 15px;
+    }
+
+    .count-balance-wrap{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .count-balance-wrap .count-wrap{
+        margin-top: 25px;
+    }
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance{
+        width: 100%;
+    }
+} 
 
 
 @media(min-width:768px) {
@@ -1848,6 +2017,28 @@ line-height: 34px;
         margin-bottom: 15px;
     }
 
+    .upcoming-chess-home-wrap .special-heading{
+        flex-direction: column;
+    }
+
+    .upcoming-chess-home-wrap .special-heading a.btn{
+        width: 170px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .tournment-upcoming-view-pdf-img .summary .btn-primary{
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .tournment-upcoming-view-pdf-img .summary{
+        margin-bottom: 0;
+    }
+
     
 }
 
@@ -1872,6 +2063,68 @@ line-height: 34px;
 
     .player-wrap .player-content{
         width: 100%;
+    }
+
+    .page_slider .flexslider .intro_layers_wrapper .intro_layers .intro_layer img{
+        max-width: 60px;
+    }
+
+    .upcoming-chess-grid-list-wrap .owl-carousel .owl-item .item-content{
+        min-height: auto;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-upcoming-view-title{
+        margin-bottom: 50px;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-upcoming-view-title h5{
+        font-size: 28px;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-title-price p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-title-price h4{
+        font-size: 44px;
+        margin-top: 15px;
+    }
+
+    .my-wallet-balance h3{
+        font-size: 40px;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h3{
+        font-size: 40px;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn.btn-Topup{
+        margin-bottom: 20px;
+    }
+
+    .cbme-registered-player-titles .entry-title{
+        margin-right: 0;
+    }
+    .cbme-registered-player-titles .entry-title{
+        margin-right: 0;
+    }
+
+
+    .header_side_sticked ~ * .container-fluid{
+        padding-left: 0;
     }
 }
 
@@ -1902,6 +2155,43 @@ line-height: 34px;
 
     .tournment-tab-wrap .tab-content > .tab-pane #collapse-D .row .col{
         flex: unset;
+    }
+
+    .my-wallet-bank-details #bank_info_btn{
+        margin-top: 25px;
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        position: relative;
+    }
+
+    .my-wallet-bank-details{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .wallet-trasfer-wrap .col-md-5{
+        max-width: 100%;
+    }
+
+    .wallet-trasfer-wrap .col-md-4{
+        max-width: 100%;
+    }
+    .wallet-trasfer-wrap .col-md-3{
+        width: auto;
+    }
+
+    .wallet-trasfer-wrap .btn-wrap .form-group{
+        padding-left: 0;
+    }
+
+    .wallet-withdraw-wrap .mar-l-pad{
+        width: auto;
+    }
+    .wallet-withdraw-wrap .mar-l-pad #withdraw_btn{
+        margin-left: 0;
     }
 }
 
@@ -2065,10 +2355,25 @@ line-height: 34px;
         width: 40px;
     }
 
-    .tournment-upcoming-view-wrapper .tournment-title-price{
-        padding: 25px 25px 25px 75px !important;
+    .page_slider .flexslider .slides{
+        height: 700px;
     }
 
+    .upcoming-chess-home-wrap .special-heading{
+        align-items: center;
+    }
+
+    .upcoming-chess-home-wrap .special-heading{
+        justify-content: center;
+    }
+
+    .upcoming-chess-home-wrap .special-heading span{
+        text-align: center;
+    }
+
+    .tournment-upcoming-view-wrapper .tournment-title-price h4{
+        font-size: 32px;
+    }
 
 }
 
