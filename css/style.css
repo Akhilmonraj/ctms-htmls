@@ -293,6 +293,11 @@ a.event-link:hover{
 .mar-l-pad{padding-left: 15px !important;}
 .mar-r-pad{padding-right: 15px !important;}
 
+
+.cs .form-control:focus {
+    border-color: #bfc9d4;
+}
+
 /* Login */
 
 .login-wrap{
@@ -338,6 +343,10 @@ a.event-link:hover{
     box-shadow: none;
 }
 
+.login-wrap .container .entry-content form p{
+    margin-bottom: 0;
+}
+
 .login-wrap .container .entry-content .woocommerce .login-title{
     margin-bottom: 45px;
     font-size: 1.75rem;
@@ -378,8 +387,30 @@ a.event-link:hover{
 }
 
 .register-wrap .register-title{
-    margin-bottom: 45px;
     font-size: 1.75rem;
+}
+
+.register-wrap .register-form-wrap form .register-form-input-group .col-sm-12{
+    margin: 0;
+}
+
+.register-form-wrap .role-chk-box{
+    margin-bottom: 0 !important;
+}
+
+.if-login-wrap{
+    color: #1f232b;
+    font-size: 15px;
+}
+
+.if-login-wrap a{
+    color: #e7c900 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.if-login-wrap a:hover{
+    color: #75bd18 !important;
 }
 
 .register-wrap .special-title .sub-title{
@@ -696,7 +727,7 @@ a.event-link:hover{
 
 .profile-user-area .row .profile-edit-back{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -1542,8 +1573,8 @@ flex-wrap: wrap;
     display: flex;
     padding: 45px 50px !important;
     border-radius: 15px !important;
-    box-shadow: 0 17px 11px -12px rgba(0, 0, 0, 0.09);
-    border: solid 1px #e7eaec;
+    box-shadow: none;
+    border: none;
     display: block;
     position: relative;
     overflow: hidden;
@@ -1600,7 +1631,7 @@ flex-wrap: wrap;
 
 .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance  img {
     position: absolute;
-    right: -20px;
+    right: 20px;
     width: 180px;
     height: auto;
     opacity: 0.1;
@@ -1608,7 +1639,7 @@ flex-wrap: wrap;
 }
 
 .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance  h6 {
-    width: 65%;
+    width: 100%;
     color: #fff;
     margin: 10px 0;
     font-weight: 400;
@@ -1616,7 +1647,7 @@ flex-wrap: wrap;
 }
 
 .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h3 {
-    width: 35%;
+    width: 100%;
     color: #e7c900;
     margin: 25px 0;
     font-size: 65px;
@@ -1628,6 +1659,8 @@ flex-wrap: wrap;
     margin-bottom: 45px;
     justify-content: space-between;
     align-items: center;
+    background-color: #051422;
+    border-radius: 15px;
 }
 
 .count-balance-wrap .count-wrap{
@@ -1640,6 +1673,7 @@ height: 215px;
     align-items: center;
     font-size: 45px;
     flex-direction: column;
+    margin-right: 40px;
 }
 
 .count-balance-wrap .count-wrap p{
@@ -1649,7 +1683,7 @@ margin: 0;
 line-height: 34px;
 }
 .count-balance-wrap .count-wrap p.name-d{
-    font-size: 19px;
+    font-size: 18px;
     padding: 0 16px;
     line-height: 23px;
     margin-top: 30px;
@@ -1660,6 +1694,8 @@ line-height: 34px;
     font-size: 60px;
     line-height: 23px;
     font-weight: 400;
+    margin-top: 40px;
+    color: #fff;
 }
 
 .dowmload-player-btn{
@@ -1774,6 +1810,36 @@ line-height: 34px;
 	width: 120px;
 	height: 120px;
 	object-fit: cover;
+}
+
+.Profile-wrap-section .entry-content .profile-id-img-wrap .img-wrap img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.created-by-me-view-wrap .created-by-me-view-title{
+    margin-bottom: 25px;
+}
+.created-by-me-view-wrap .created-by-me-view-title.btn-dist{
+    justify-content: flex-end; 
+}
+
+.created-by-me-view-wrap .entry-title a{
+    position: relative
+}
+
+.created-by-me-view-wrap .entry-title a:before{
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    background-color: #e7c900;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    margin: 0 auto;
 }
 
 
@@ -2088,6 +2154,39 @@ line-height: 34px;
         margin-bottom: 0;
     }
 
+    .count-balance-wrap .count-wrap{
+        margin: 0 auto 45px;
+    }
+
+    .cbme-registered-player-titles .entry-title{
+        margin-right: 0;
+    }
+
+    .created-by-me-view-wrap .created-by-me-view-title.btn-dist{
+        justify-content: center; 
+    }
+    
+    .register-wrap .register-form-wrap form.signup-form > .row{
+        margin: 0;
+    }
+
+    .Profile-wrap-section .profile-user-area .small-12{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        margin-top: 15px;
+    }
+    
+    .Profile-wrap-section .profile-user-area .small-12 .p-image{
+    	left: 0;
+    	bottom: 0;
+    	
+    }
+    
+    .profile-user-area .row .profile-edit-back{
+    	justify-content: center;
+    margin: 15px;
+    }
     
 }
 
@@ -2131,6 +2230,10 @@ line-height: 34px;
     }
 
     h3{
+        font-size: 30px;
+    }
+
+    .register-wrap .special-title h2.special-heading{
         font-size: 30px;
     }
 
@@ -2345,6 +2448,14 @@ line-height: 34px;
 	header .row .col-8 a{
 		justify-content: center;
 	}
+
+    header .logo img{
+        margin-left:0px;
+    }
+
+    .page_slider .flexslider .slides{
+        height: 520px;
+    }
 }
 
 @media (max-width: 480px){
