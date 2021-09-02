@@ -1807,7 +1807,7 @@ line-height: 34px;
 	padding-left: 50px;
 }
 
-.header-side-menu .row .mt-3 .profile-pic{
+.header-side-menu .row .profile-pic{
 	width: 120px;
 	height: 120px;
 	object-fit: cover;
