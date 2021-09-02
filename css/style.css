@@ -559,6 +559,7 @@ a.event-link:hover{
 
 .Profile-wrap-section  .profile-content .profile-user-area .img-wrap{
     width: 150px;
+    text-align: center;
 }
 
 .Profile-wrap-section  .profile-content .profile-user-area .post-edit-link{
@@ -1816,6 +1817,7 @@ line-height: 34px;
     width: 120px;
     height: 120px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .created-by-me-view-wrap .created-by-me-view-title{
