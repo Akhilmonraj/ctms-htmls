@@ -1811,6 +1811,7 @@ line-height: 34px;
 	width: 120px;
 	height: 120px;
 	object-fit: cover;
+    border-radius: 50%;
 }
 
 .Profile-wrap-section .entry-content .profile-id-img-wrap .img-wrap img{
