@@ -1553,7 +1553,7 @@ flex-wrap: wrap;
 .player-list-wrap .player-list-item h5{
     margin: 15px 0 0;
     color: #e7c900;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 /* Tab styling */
@@ -2544,6 +2544,57 @@ line-height: 34px;
 
     .tournment-upcoming-view-wrapper .tournment-title-price h4{
         font-size: 32px;
+    }
+
+    .player-list-wrap .player-list-item h5{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .player-list-wrap .player-list-item .date{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .cbme-registered-player{
+        padding: 25px 15px;
+    }
+
+    .count-balance-wrap .count-wrap{
+        width: 170px;
+        height: 170px;
+        border: solid 7px #e7c900;
+    }
+
+    .count-balance-wrap .count-wrap p.count-d{
+        font-size: 50px;
+    }
+
+    .count-balance-wrap .count-wrap p.name-d{
+        font-size: 14px;
+    }
+
+    .created-by-me-view-wrap .entry-title a{
+        margin-bottom: 55px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .created-by-me-view-wrap .created-by-me-view-title.btn-dist{
+        align-items: center;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance{
+        padding: 45px 30px !important;
+    }
+
+    .cbme-registered-player form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cbme-registered-player form input[type="submit"]{
+        width: max-content;
     }
 
 }
