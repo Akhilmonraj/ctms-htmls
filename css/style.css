@@ -2597,6 +2597,23 @@ line-height: 34px;
         width: max-content;
     }
 
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance .player-btn-group .btn.btn-Topup{
+        margin-right: 0;
+    }
+
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h3{
+        text-align: center;
+    }
+    .cbme-registered-player .cbme-registered-player-titles .my-wallet-balance h6{
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 320px){
