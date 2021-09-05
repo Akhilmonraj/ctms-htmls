@@ -1,0 +1,2245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from chessmii.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Aug 2021 09:17:04 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+	<title>Chessmii</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="csrf-token" content="GuxyNivzHjvcJntL1heg83S7BTGwu1FNGZxA3sSh">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- Styles -->
+	<!-- <link href="https://chessmii.com/css/app.css" rel="stylesheet">
+
+    <script src="https://chessmii.com/js/app.js" defer></script> -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome5.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/style.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input2">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- Top Bar -->
+			<div class="header_absolute ">
+				<!-- header with two Bootstrap columns - left for logo and right for navigation -->
+				<header class="page_header ds ms bg-transparent justify-nav-center s-overlay s-py-10 ">
+
+					<div class="container-fluid">
+
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-3 col-md-7 col-8">
+								<a href="https://chessmii.com" class="logo">
+									<img src="https://chessmii.com/img/logo.png" alt="">
+								</a>
+							</div>
+							<div class="col-xl-10 col-lg-9 col-md-5 col-1">
+								<div class="nav-wrap">
+									<!-- main nav start -->
+									<nav class="top-nav justify-nav-center">
+										<!-- <ul class="nav sf-menu">
+								<li class="">
+									<a href="https://chessmii.com">Home</a>
+									<ul>
+										<li>
+											<a href="#">#</a>
+										</li>
+									</ul>
+								</li>
+							</ul> -->
+									</nav>
+									<!-- eof main nav -->
+									<ul class="top-includes d-none d-xl-block text-right">
+										<!-- Notifications -->
+										<li>
+											<div class="dropdown">
+												<a href="#" class="dropdown-toggle showNotification"
+													id="dropdownMenuButtonBell" data-toggle="dropdown"
+													aria-haspopup="true" aria-expanded="false">
+													<div class="notificationNumber"></div>
+													<i class="far fa-bell"></i>
+												</a>
+												<div class="dropdown-menu dropdown-menu-right showNotificationDiv"
+													aria-labelledby="dropdownMenuButtonBell">
+													<div class="widget widget_search" style="width:40%;">
+
+
+														<ul class="notificationBox">
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/3b98a7cd-26ac-47cd-bc51-0ddca4d9e94a">
+																	New tournament - Test New Tournament
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/7bac7129-de65-4afe-a0c3-e6da61cd05c9">
+																	New tournament - ssadai T
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/d533d323-8cc2-4e87-aba8-49722f23d49c">
+																	New tournament - Tester 001 Tournament
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/9399402c-d588-4e16-9c85-9480a1946f63">
+																	New tournament - dsfdsfdsf
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/6fee987d-5a39-447d-badf-57455b578b1d">
+																	New tournament - sddsdsddd
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/3a10837d-68bc-4bab-bbf9-2ea956fbced6">
+																	New tournament - Test T 2022
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink readDone"
+																	href="https://chessmii.com/notification/read/5889fbf5-a2bb-4311-9b55-870edf42184d">
+																	New tournament - Test 05
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/aa2fc934-ad44-4729-b05e-fbf058046bc0">
+																	New tournament - New Test
+																</a>
+															</li>
+															<li>
+																<a target="_blank" class="notificationLink "
+																	href="https://chessmii.com/notification/read/df0e2ecf-09cf-48b1-bdca-47006463dbf3">
+																	New tournament - ttttttttttt
+																</a>
+															</li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<a class="dropdown-item" href="https://chessmii.com/logout" onclick="event.preventDefault();
+															document.getElementById('logout-form').submit();">
+												Logout
+											</a>
+
+											<form id="logout-form" action="https://chessmii.com/logout" method="POST"
+												class="d-none">
+												<input type="hidden" name="_token"
+													value="Vm4w7CtGFF61Q4ULiFMLw6IQKwiVd1jkKTGAuIej">
+											</form>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- header toggler -->
+					<span class="toggle_menu"><span></span></span>
+				</header>
+			</div>
+			<!-- Side Bar -->
+
+			<header class="page_header_side header_side_sticked ls">
+				<span class="toggle_menu toggle_menu_side header-slide"><span></span></span>
+				<div class="scrollbar-macosx">
+					<div class="side_header_inner">
+
+
+						<div class="header-side-menu">
+							<div class="row">
+								<div class="mx-auto small-12 medium-2 large-2 columns">
+									<div class="avatar-circle">
+										<!-- User Profile Image -->
+										<img class="profile-pic"
+											src="https://chessmii.com/uploads/profile/no-profile-pic.png">
+									</div>
+
+								</div>
+								<span class="mt-3 mb-3 mx-auto"> Welcome !! tece</span>
+							</div>
+							<!-- main side nav start -->
+							<nav class="mainmenu_side_wrapper">
+								<ul class="nav menu-click">
+									<li class="">
+										<a href="https://chessmii.com">Home</a>
+									</li>
+									<li class="active">
+										<a href="https://chessmii.com/user/profile">User Profile</a>
+									</li>
+									<li class="">
+										<a href="https://chessmii.com/user/player/add">Invite Players</a>
+									</li>
+									<li class="">
+										<a href="">Wallet</a>
+										<ul>
+											<li class="">
+												<a href="https://chessmii.com/wallet">My Account</a>
+											</li>
+											<li class="">
+												<a
+													href="https://chessmii.com/wallet/transactions-history">Transactions</a>
+											</li>
+											<li class="">
+												<a href="https://chessmii.com/wallet">KYC</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="">
+										<a href="https://chessmii.com/tournament/list/all">Tournaments</a>
+										<ul>
+											<li class="">
+												<a href="https://chessmii.com/tournament/list/all">Upcoming</a>
+											</li>
+											<li class="">
+												<a href="https://chessmii.com/tournament/create">Create New</a>
+											</li>
+											<li class="">
+												<a href="https://chessmii.com/tournament/list/me/organizer">Created By
+													Me</a>
+											</li>
+											<li class="">
+												<a href="https://chessmii.com/tournament/list/registered">Registered By
+													Me</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+							<!-- eof main side nav -->
+						</div>
+
+						<div class="text-center">
+							<span class="social-icons">
+								<a href="#" class="fab fab fa-facebook-f color-icon border-icon rounded-icon"
+									title="facebook"></a>
+								<a href="#" class="fab fa-telegram-plane color-icon border-icon rounded-icon"
+									title="telegram"></a>
+								<a href="#" class="fab fa-linkedin-in color-icon border-icon rounded-icon"
+									title="linkedin"></a>
+								<a href="#" class="fab fa-instagram color-icon border-icon rounded-icon"
+									title="instagram"></a>
+							</span>
+						</div>
+
+						<div class="widget widget_icons_list links-maincolor">
+							<ul class="list-unstyled">
+								<li class="icon-inline">
+									<div class="icon-styled color-darkgrey icon-top fs-14">
+										<i class="fa fa-phone"></i>
+									</div>
+									<a target="_blank" href="https://wa.me/919074365503">
+										<p>+91 9074365503</p>
+									</a>
+								</li>
+								<li class="icon-inline">
+									<div class="icon-styled color-darkgrey icon-top fs-14">
+										<i class="fa fa-phone"></i>
+									</div>
+									<a target="_blank" href="https://wa.me/917907780366">
+										<p>+91 7907780366</p>
+									</a>
+								</li>
+								<li class="icon-inline">
+									<div class="icon-styled color-darkgrey icon-top fs-14">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<p>
+										<a href="#">support@chessmii.com</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</header>
+
+
+			<section class="ls s-py-xl-150 s-py-lg-130 s-py-md-90 s-py-60 chess-faq-privacy-wrapper">
+				<div class="container">
+
+					<header class="entry-header">
+                        <h1 class="entry-title">Frequently Asked Questions (FAQ)</h1>
+                        <span class="edit-link">
+                        </span>
+                    </header>
+
+
+					<div class="row">
+						<div class="col-12 col-md-5 col-lg-4">
+							<ul class="nav nav-tabs vertical-tabs faq-privacy-tab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active show" id="tab01" data-toggle="tab" href="#tab01_pane"
+										role="tab" aria-controls="tab01_pane" aria-expanded="true" aria-selected="true">
+										<div class="media">
+											<div class="icon-styled color-main fs-28">
+												<img src="img/faq.png" alt="">
+											</div>
+											<div class="media-body">
+												<h6>
+													FAQs
+												</h6>
+												<p>
+													Navigation related queries
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab02" data-toggle="tab" href="#tab02_pane" role="tab"
+										aria-controls="tab02_pane" aria-selected="false">
+										<div class="media">
+											<div class="icon-styled color-main fs-28">
+												<img src="img/faq.png" alt="">
+											</div>
+											<div class="media-body">
+												<h6>
+													FAQs
+												</h6>
+												<p>
+													Navigation related queries
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab03" data-toggle="tab" href="#tab03_pane" role="tab"
+										aria-controls="tab03_pane" aria-selected="false">
+										<div class="media">
+											<div class="icon-styled color-main fs-28">
+												<img src="img/feature.png" alt="">
+											</div>
+											<div class="media-body">
+												<h6>
+													Our Features
+												</h6>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 col-md-7 col-lg-8">
+							<div class="divider-40 hidden-above-md"></div>
+							<div class="tab-content shadow-none border-none p-0">
+								<div class="tab-pane fade in active show" id="tab01_pane" role="tabpanel"
+									aria-labelledby="tab01">
+									<div id="accordion01" role="tablist">
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse01_header">
+												<h5>
+													<a data-toggle="collapse" href="#collapse01" aria-expanded="true"
+														aria-controls="collapse01">
+														How to register or sign up?
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse01" class="collapse show" role="tabpanel"
+												aria-labelledby="collapse01_header" data-parent="#accordion01">
+												<div class="card-body">
+													<p>Go to <a href="https://chessmii.com/">Chessmii.com. </a> Click on
+														<a href="https://chessmii.com/register"> Register now. </a>
+													</p>
+													<ul style="list-style-type:circle;">
+														<li> Enter the following
+															<ul class="list-styled">
+																<li>Name</li>
+																<li>Username</li>
+																<li>Email</li>
+																<li>Mobile Number</li>
+																<li>Password</li>
+															</ul>
+														</li>
+														<li>Click Register (You will receive a verification email to
+															your registered email)
+														</li>
+														<li>Click Verify Email Address
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse02_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse02"
+														aria-expanded="false" aria-controls="collapse02">
+														How to Login or Sign in?
+													</a>
+												</h5>
+											</div>
+											<div id="collapse02" class="collapse" role="tabpanel"
+												aria-labelledby="collapse02_header" data-parent="#accordion01">
+												<div class="card-body">
+													<p>Go to <a href="https://chessmii.com/">Chessmii.com. </a> Click on
+														<a href="https://chessmii.com/register"> Register now. </a>
+													</p>
+													<ul style="list-style-type:circle;">
+														<li> Enter the following
+															<ul class="list-styled">
+																<li>Name</li>
+																<li>Username</li>
+																<li>Email</li>
+																<li>Mobile Number</li>
+																<li>Password</li>
+															</ul>
+														</li>
+														<li>Click Register (You will receive a verification email to
+															your registered email)
+														</li>
+														<li>Click Verify Email Address
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse03_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse03"
+														aria-expanded="false" aria-controls="collapse03">
+
+														How to update User Profile?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse03" class="collapse" role="tabpanel"
+												aria-labelledby="collapse03_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To update your User Profile in Chessmii account on a computer:
+													</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li> After Log in, Click on
+
+															<a href="https://chessmii.com/user/profile/">User
+																Profile</a>
+
+															in the Left side menu bar of Chessmii
+
+
+														<li>Name</li>
+														<li>Click Edit </li>
+														<li>Update your details</li>
+														<li>Click Save</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse04_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse04"
+														aria-expanded="false" aria-controls="collapse04">
+
+														How to add money to Wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse04" class="collapse" role="tabpanel"
+												aria-labelledby="collapse04_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To add money to your Wallet in Chessmii account on a computer:
+													</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li> After login, Go to left side menu bar of Chessmii</li>
+														<li>Click on Wallet then
+															<a href="https://chessmii.com/wallet">My Account</a>
+
+														<li>Click on Add button in Balance </li>
+														<li>Click Edit </li>
+														<li>Enter an amount you wish to add</li>
+														<li>Click Confirm</li>
+
+														<li>Select UPI/Credit Card/Debit Card/Net Banking/NEFT etc
+															options for the transaction.</li>
+														<li>You will also receive a payment confirmation email to your
+															registered email</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse05_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse05"
+														aria-expanded="false" aria-controls="collapse05">
+
+														How to add Bank account details?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse05" class="collapse" role="tabpanel"
+												aria-labelledby="collapse05_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To add your bank account details in Chessmii account on a
+														computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li> After login, click on Wallet then
+
+															<a href="https://chessmii.com/wallet">My Account</a>
+
+															in the left side menu bar of Chessmii
+
+														<li>Click on Edit button in Bank</li>
+														<li>Enter the following</li>
+														<ul class="list-styled">
+															<li>Account Number</li>
+															<li>Account Holder Name</li>
+															<li>IFSC </li>
+															<li>Branch</li>
+														</ul>
+														</li>
+														<li>Click Update button</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse06_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse06"
+														aria-expanded="false" aria-controls="collapse06">
+
+														How to Withdraw money from your wallet to your bank account?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse06" class="collapse" role="tabpanel"
+												aria-labelledby="collapse06_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To withdraw money from your wallet to bank account in Chessmii
+														account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li> After login, click on Wallet then
+
+															<a href="https://chessmii.com/wallet">My Account</a>
+
+															in the left side menu bar of Chessmii
+
+														<li>Go to Withdraw Money section</li>
+														<li>Enter the amount you would like to withdraw from wallet</li>
+														<li>Click Withdraw button</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse07_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse07"
+														aria-expanded="false" aria-controls="collapse07">
+
+														How to Transfer money from your wallet to a friend's wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse07" class="collapse" role="tabpanel"
+												aria-labelledby="collapse07_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To transfer money from your wallet to a friend’s wallet in
+														Chessmii account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li> After login, click on Wallet then
+
+															<a href="https://chessmii.com/wallet">My Account</a>
+
+															in the left side menu bar of Chessmii
+
+														<li>Go to Transfer Money section</li>
+														<li>Enter the amount you would like to transfer to your friend
+														</li>
+														<li>Click Transfer button</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse08_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse08"
+														aria-expanded="false" aria-controls="collapse08">
+
+														Where can I find my transaction history?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse08" class="collapse" role="tabpanel"
+												aria-labelledby="collapse08_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view your transaction history in Chessmii account on a
+														computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li> After login, click on Wallet</li>
+														<li> Click on
+															<a
+																href="https://chessmii.com/wallet/transactions-history">Transactions</a>
+
+															in the left side menu bar of Chessmii
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse09_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse09"
+														aria-expanded="false" aria-controls="collapse09">
+
+														Where can I find upcoming tournaments?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse09" class="collapse" role="tabpanel"
+												aria-labelledby="collapse09_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view the upcoming tournaments in Chessmii account on a
+														computer:</p>
+
+													<p>OPTION: 1</p>
+													<ul style="list-style-type:circle;">
+														<li> Go to
+															<a href="https://chessmii.com/">Chessmii.com</a>
+														</li>
+														<li>Click on
+															<a href="https://chessmii.com/tournament/list/all/">View
+																all</a>
+															button along the right side of upcoming tournaments
+														</li>
+													</ul>
+
+													<p>OPTION: 2</p>
+													<ul style="list-style-type:circle;">
+														<li>After login, click on Menu button on top left side </li>
+														<li>Click on Tournaments</li>
+														<li>Click on <a
+																href="https://chessmii.com/tournament/list/all/">
+																Upcoming tournaments</a></li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse10_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse10"
+														aria-expanded="false" aria-controls="collapse10">
+
+														How to register for a tournament?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse10" class="collapse" role="tabpanel"
+												aria-labelledby="collapse10_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To register a tournament in Chessmii account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>After login, Go to left side menu bar of Chessmii</li>
+
+														<li>Click on Tournaments</li>
+														<li>Click on
+															<a href="https://chessmii.com/tournament/list/all">Upcoming
+																tournaments</a>
+														</li>
+
+														<li>Click on More button from the list</li>
+														<li>Select the Category</li>
+														<li>Click Register button</li>
+
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse11_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse11"
+														aria-expanded="false" aria-controls="collapse11">
+
+														Where can I find the tournaments registered by me?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse11" class="collapse" role="tabpanel"
+												aria-labelledby="collapse11_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view the tournament registered by me in Chessmii account on a
+														computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>After login, Go to left side menu bar of Chessmii</li>
+
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu Click on
+															<a href="https://chessmii.com/tournament/list/registered">Registered
+																By Me</a>
+														</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse12_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse12"
+														aria-expanded="false" aria-controls="collapse12">
+
+														How to request a refund for the tournament I have registered
+														for?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse12" class="collapse" role="tabpanel"
+												aria-labelledby="collapse12_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To request a refund for the tournament registered by me in
+														Chessmii account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>After login, Go to left side menu bar of Chessmii</li>
+
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu Click on
+															<a href="https://chessmii.com/tournament/list/registered">Registered
+																By Me</a>
+														</li>
+
+														<li>Click on Request button</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse13_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse13"
+														aria-expanded="false" aria-controls="collapse13">
+
+														Where can I find the tournament link and password?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse13" class="collapse" role="tabpanel"
+												aria-labelledby="collapse13_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view the tournament link and password in Chessmii account on a
+														computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>After login, Go to left side menu bar of Chessmii</li>
+
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu Click on
+															<a href="https://chessmii.com/tournament/list/all">Upcoming
+																tournaments</a>
+														</li>
+
+														<li>Click on More button from the list</li>
+														<li>Click on Tournament Credentials</li>
+													</ul>
+													<p>Note: Tournament Credentials will be visible only after
+														tournament registration.</p>
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse14_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse14"
+														aria-expanded="false" aria-controls="collapse14">
+
+														How to create a chess tournament?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse14" class="collapse" role="tabpanel"
+												aria-labelledby="collapse14_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To create a tournament in Chessmii account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>After login, Go to left side menu bar of Chessmii</li>
+
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu Click on
+															<a href="https://chessmii.com/tournament/create">Create
+																New</a>
+														</li>
+													</ul>
+
+													<p>STEP 1:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>Enter the following or Select the options </li>
+														<ul class="list-styled">
+
+															<li>Tournament Name</li>
+															<li>Organized By</li>
+															<li>Sponsored By</li>
+															<li>Start Date</li>
+															<li>End Date</li>
+															<li>Starts On Time</li>
+															<li>Tournament Description</li>
+															<li>Tournament Terms &amp; Conditions</li>
+															<li>End Date</li>
+															<li>End Date</li>
+														</ul>
+														<li>Click Next</li>
+													</ul>
+
+													<p>STEP 2:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>Enter the following or Select the options </li>
+														<ul class="list-styled">
+
+															<li>Type</li>
+															<li>Choose Your Platform</li>
+															<li>Tournament Link</li>
+															<li>Tournament Password</li>
+														</ul>
+														<li>Click Next</li>
+													</ul>
+
+
+													<p>STEP 3:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>Enter the following or Select the options </li>
+														<ul class="list-styled">
+
+															<li>Choose Tournament Type</li>
+															<li>Time Control</li>
+
+														</ul>
+														<li>Upload Brochure Image</li>
+														<li>Upload Brochure or Tournament Details in PDF Format</li>
+														<li>Click Next</li>
+													</ul>
+
+
+													<p>STEP 4:</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>Enter the following or Select the options </li>
+														<ul class="list-styled">
+
+															<li>Choose Tournament Prize Money Type</li>
+															<ul class="list-styled">
+
+																<li>If Fixed: Enter Total Prize Money</li>
+
+																<li>If Percentage: Enter Total Prize Percentage</li>
+															</ul>
+														</ul>
+														<p>Percentage Prize Money Concept: Out of 100% registration fee
+															collected, how much percentage the organizer wish to provide
+															as prize money</p>
+
+														<ul class="list-styled">
+															<li>Tournament Entry Fees</li>
+															<ul class="list-styled">
+																<li>Category</li>
+																<li>Fees</li>
+
+															</ul>
+														</ul>
+
+														<li>Click on Go Live</li>
+
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse15_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse15"
+														aria-expanded="false" aria-controls="collapse15">
+
+														As a Chess Tournament Organizer, Where can I find the
+														tournaments created by me?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse15" class="collapse" role="tabpanel"
+												aria-labelledby="collapse15_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view a tournament created by organizer in Chessmii account on
+														a computer:</p>
+													<ul style="list-style-type:circle;">
+
+														<li>After login, Go to left side menu bar of Chessmii</li>
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu, Click on
+															<a href="https://chessmii.com/tournament/list/me/organizer">Created
+																By Me</a>
+														</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse16_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse16"
+														aria-expanded="false" aria-controls="collapse16">
+
+														As a Chess Tournament Organizer, Where can I find the tournament
+														player list?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse16" class="collapse" role="tabpanel"
+												aria-labelledby="collapse16_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view a tournament player list for the organizer in Chessmii
+														account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii</li>
+														<li>Click on Tournaments</li>
+														<li> In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournaments</li>
+														<li>Go to Tournament Player List Section</li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse17_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse17"
+														aria-expanded="false" aria-controls="collapse17">
+
+														How to download a chess tournament player list?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse17" class="collapse" role="tabpanel"
+												aria-labelledby="collapse17_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To view a tournament player list for the organizer in Chessmii
+														account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii </li>
+														<li>Click on Tournaments</li>
+														<li> In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournaments</li>
+														<li>Click on Download Player List button</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse18_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse18"
+														aria-expanded="false" aria-controls="collapse18">
+
+														How to distribute prize money to players?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse18" class="collapse" role="tabpanel"
+												aria-labelledby="collapse18_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To distribute prize money to the players in Chessmii account on a
+														computer:</p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii </li>
+														<li>Click on Tournaments</li>
+														<li> In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournaments</li>
+														<li>Click on Download Player List button to download the player
+															list</li>
+														<li>Enter the prize money based on standing</li>
+														<li>Upload the prize money updated file in Distribute Prize
+															Money Section</li>
+														<li>Click on the Submit button</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse19_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse19"
+														aria-expanded="false" aria-controls="collapse19">
+
+														How to Topup the Tournament Wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse19" class="collapse" role="tabpanel"
+												aria-labelledby="collapse19_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To topup the tournament wallet in Chessmii account on a computer:
+													</p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii </li>
+														<li>Click on Tournaments</li>
+														<li> In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournament</li>
+														<li>Click on Top up button in Tournament Wallet Section</li>
+														<li>Enter the amount</li>
+														<li>Click on the Confirm button.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse20_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse20"
+														aria-expanded="false" aria-controls="collapse20">
+
+														How to transfer the amount from Tournament Wallet to Organizer
+														Wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse20" class="collapse" role="tabpanel"
+												aria-labelledby="collapse20_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To transfer the amount from tournament wallet to organizer wallet
+														in Chessmii account on a computer:</p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii </li>
+														<li>Click on Tournaments</li>
+														<li> In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournament</li>
+														<li>Click on Transfer button in the Tournament Wallet Section
+														</li>
+
+														<p>Note: Transfer button will be visible only after distributing
+															prize money to players .</p>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse21_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse21"
+														aria-expanded="false" aria-controls="collapse21">
+
+														How to give a refund or accept the refund request from a player?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse21" class="collapse" role="tabpanel"
+												aria-labelledby="collapse21_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To give a refund or accept the refund request from a player in
+														Chessmii account on a computer: </p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii </li>
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournament</li>
+														<li>Go to Player List section</li>
+														<li>Select the Player</li>
+														<li>Click on the REFUND button</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse22_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse22"
+														aria-expanded="false" aria-controls="collapse22">
+
+														How to cancel the tournament &amp; refund all the players?
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse22" class="collapse" role="tabpanel"
+												aria-labelledby="collapse22_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>To cancel the tournament &amp; refund all the players in Chessmii
+														account on a computer: </p>
+
+													<ul style="list-style-type:circle;">
+														<li>After login, Go to left side menu bar of Chessmii </li>
+														<li>Click on Tournaments</li>
+														<li>In Drop down Menu, Click on
+															<a
+																href="https://chessmii.com/tournament/list/organizer/tournaments">Player
+																List</a>
+														</li>
+														<li>Select Tournament</li>
+														<li>Click on Cancel &amp; Refund button</li>
+													</ul>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="tab02_pane" role="tabpanel" aria-labelledby="tab02">
+									<div id="accordion01" role="tablist">
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse51_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse51"
+														aria-expanded="false" aria-controls="collapse51">
+
+														Are there any charges to use the chessmii services?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse51" class="collapse show" role="tabpanel"
+												aria-labelledby="collapse51_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> No. There is no charge to use the chessmii services.</p>
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse52_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse52"
+														aria-expanded="false" aria-controls="collapse52">
+
+														Is there any way to invite my friend to chessmii?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse52" class="collapse" role="tabpanel"
+												aria-labelledby="collapse52_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, You can invite your friend to Chessmii from Invite Player
+														option </p>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse53_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse53"
+														aria-expanded="false" aria-controls="collapse53">
+
+														I am a Chess Player. I would like to organize a chess
+														tournament. Is there any option to update or change my role as
+														organiser in Chessmii?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse53" class="collapse" role="tabpanel"
+												aria-labelledby="collapse53_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, you can request to update your role as Organiser. </p>
+
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse54_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse54"
+														aria-expanded="false" aria-controls="collapse54">
+
+														Is it possible to add the link of Lichess.org or chess.com while
+														creating a tournament?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse54" class="collapse" role="tabpanel"
+												aria-labelledby="collapse54_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, You can add the chess.com or Lichess link while creating a
+														tournament </p>
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse55_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse55"
+														aria-expanded="false" aria-controls="collapse55">
+
+														Can I transfer prize money via Chessmii to winners?
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse55" class="collapse" role="tabpanel"
+												aria-labelledby="collapse55_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, Through chessmii.com, You can easily transfer the prize
+														money. </p>
+
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse56_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse56"
+														aria-expanded="false" aria-controls="collapse56">
+
+														Is it possible to withdraw an amount from a wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse56" class="collapse" role="tabpanel"
+												aria-labelledby="collapse56_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, you can directly withdraw the amount to your bank account.
+													</p>
+
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse57_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse57"
+														aria-expanded="false" aria-controls="collapse57">
+
+														Is there any option to transfer money from my wallet to my
+														friend’s Wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse57" class="collapse" role="tabpanel"
+												aria-labelledby="collapse57_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes. There is an option in your Wallet. </p>
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse58_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse58"
+														aria-expanded="false" aria-controls="collapse58">
+
+														Can I withdraw an amount from a wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse58" class="collapse" role="tabpanel"
+												aria-labelledby="collapse58_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, there is an option in your wallet </p>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse59_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse59"
+														aria-expanded="false" aria-controls="collapse59">
+
+														How much time will it take to credit the amount from wallet to
+														bank account?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse59" class="collapse" role="tabpanel"
+												aria-labelledby="collapse59_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Within74 hours the amount will be credited to your bank account.
+													</p>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse60_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse60"
+														aria-expanded="false" aria-controls="collapse60">
+
+														What is the minimum amount allowed to withdraw from a user
+														wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse60" class="collapse" role="tabpanel"
+												aria-labelledby="collapse60_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Rs 200. User wallet must be able to withdraw from the Wallet.
+													</p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse61_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse61"
+														aria-expanded="false" aria-controls="collapse61">
+
+														What is the maximum amount allowed for withdrawal from chessmii
+														wallet?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse61" class="collapse" role="tabpanel"
+												aria-labelledby="collapse61_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> There is no maximum limit for withdrawal. </p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse62_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse62"
+														aria-expanded="false" aria-controls="collapse62">
+
+														What is the daily limit in wallet to transfer amount from one
+														user to another?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse62" class="collapse" role="tabpanel"
+												aria-labelledby="collapse62_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Maximum limit to transfer is Rs. 5000. </p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse63_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse63"
+														aria-expanded="false" aria-controls="collapse63">
+
+														Can I edit the tournament created by me?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse63" class="collapse" role="tabpanel"
+												aria-labelledby="collapse63_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes. You can edit your tournament from the edit option. </p>
+
+
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse64_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse64"
+														aria-expanded="false" aria-controls="collapse64">
+
+														Can I delete or cancel the tournament that I created?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse64" class="collapse" role="tabpanel"
+												aria-labelledby="collapse64_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, you can delete the tournament </p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse65_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse65"
+														aria-expanded="false" aria-controls="collapse65">
+
+														Is there any option to give refunds to players?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse65" class="collapse" role="tabpanel"
+												aria-labelledby="collapse65_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, Organizers have the option to refund to players </p>
+
+													Note:- This action leads to cancellation of that particular
+													tournament and refund all the amount to registered players till that
+													time.
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse66_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse66"
+														aria-expanded="false" aria-controls="collapse66">
+
+														Is there any option to give refunds to players?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse66" class="collapse" role="tabpanel"
+												aria-labelledby="collapse66_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, Organizers have the option to refund to players </p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse67_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse67"
+														aria-expanded="false" aria-controls="collapse67">
+
+														Can the Chessmii used offline?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse67" class="collapse" role="tabpanel"
+												aria-labelledby="collapse67_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> No. Chessmii only works while you are online. </p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse68_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse68"
+														aria-expanded="false" aria-controls="collapse68">
+
+														What if payment gets rejected?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse68" class="collapse" role="tabpanel"
+												aria-labelledby="collapse68_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Check your bank account transaction history. </p>
+													<p> If the amount is not deducted, you can try again. </p>
+													<p> If the amount is deducted, you need to contact the Chessmii
+														support team. </p>
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse69_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse69"
+														aria-expanded="false" aria-controls="collapse69">
+
+														Will I get notification for upcoming tournaments?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse69" class="collapse" role="tabpanel"
+												aria-labelledby="collapse69_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, All the notifications will be available on the bell icon.
+													</p>
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse70_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse70"
+														aria-expanded="false" aria-controls="collapse70">
+
+														Will I get notification for upcoming tournaments?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse70" class="collapse" role="tabpanel"
+												aria-labelledby="collapse70_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, All the notifications will be available on the bell icon.
+													</p>
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse71_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse71"
+														aria-expanded="false" aria-controls="collapse71">
+
+														Can I withdraw from the registered tournament?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse71" class="collapse" role="tabpanel"
+												aria-labelledby="collapse71_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, All the notifications will be available on the bell icon.
+													</p>
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse72_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse72"
+														aria-expanded="false" aria-controls="collapse72">
+
+
+														When will I get the refund ?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse72" class="collapse" role="tabpanel"
+												aria-labelledby="collapse72_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Once organiser approved the refund request </p>
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse73_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse73"
+														aria-expanded="false" aria-controls="collapse73">
+
+
+														Where will the refund get reflected?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse73" class="collapse" role="tabpanel"
+												aria-labelledby="collapse73_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Once tournament organizers approve your request, the refund
+														amount will be credited to your Chessmii Wallet.
+													</p>
+
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse74_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse74"
+														aria-expanded="false" aria-controls="collapse74">
+
+
+														Can I transfer the balance amount from my wallet to the bank?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse74" class="collapse" role="tabpanel"
+												aria-labelledby="collapse74_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Yes, You need to add the bank account details in order to
+														withdraw the amount to the bank account.
+													</p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse75_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse75"
+														aria-expanded="false" aria-controls="collapse75">
+
+
+														What is a Fixed prize money tournament?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse75" class="collapse" role="tabpanel"
+												aria-labelledby="collapse75_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> Fixed prize money tournament is having fixed prize money </p>
+
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse76_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse76"
+														aria-expanded="false" aria-controls="collapse76">
+
+
+														What percentage tournament prize money ?
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse76" class="collapse" role="tabpanel"
+												aria-labelledby="collapse76_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p> After creating the tournament, organizer is abide to distribute
+														prize money only through Chessmii.com Wallet
+													</p>
+
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="tab03_pane" role="tabpanel" aria-labelledby="tab03">
+									<div id="accordion01" role="tablist">
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse80_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse80"
+														aria-expanded="false" aria-controls="collapse80">
+
+														For Chess Players
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse80" class="collapse show" role="tabpanel"
+												aria-labelledby="collapse80_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>Chessmii, as an online Chess portal, helps Chess players to know
+														about the upcoming chess tournaments and there is no service
+														charge for registering the tournaments.</p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>Benefits for Chess Players</li>
+														<ul class="list-styled">
+															<li>Free Signup</li>
+
+															<li>Unlimited Tournament Registration</li>
+															<li>Free Wallet Service</li>
+															<li>No Transaction Fee to add amount to wallet</li>
+															<li>No Transaction Fee to register to any tournament </li>
+															<li>New Tournament Notification System</li>
+
+														</ul>
+													</ul>
+
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card">
+											<div class="card-header" role="tab" id="collapse81_header">
+												<h5>
+													<a class="collapsed" data-toggle="collapse" href="#collapse81"
+														aria-expanded="false" aria-controls="collapse81">
+
+														For Chess Players
+
+													</a>
+												</h5>
+											</div>
+
+											<div id="collapse81" class="collapse" role="tabpanel"
+												aria-labelledby="collapse81_header" data-parent="#accordion01">
+
+												<div class="card-body">
+
+													<p>Chessmii, as an online Chess portal helps Chess tournament
+														organisers to organise a tournament hassle free. </p>
+
+													<ul style="list-style-type:circle;">
+
+														<li>Benefits for Chess Tournament Organizers</li>
+														<ul class="list-styled">
+															<li>Free Signup</li>
+															<li>Zero Charges for tournament creation</li>
+															<li>No limit on tournament creation</li>
+															<li>No limit on player count on tournaments</li>
+															<li>Downloadable player list</li>
+															<li>Tournament Wallet</li>
+															<li>Effortless prize money distribution</li>
+															<li>New Tournament Notification System</li>
+															<li>Zero Charges on Digital Marketing</li>
+
+														</ul>
+													</ul>
+
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+
+
+
+			<footer class="page_footer footer-1 text-center text-sm-left  ds s-pt-60 s-pb-30 c-mb-30 s-bordertop">
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center">
+
+						<div class="col-xl-2 col-12 text-xl-left text-center  animate" data-animation="fadeInUp">
+							<a href="https://chessmii.com" class="logo">
+								<img src="https://chessmii.com/img/logo.png" alt="">
+							</a>
+						</div>
+
+						<div class="col-xl-8 col-12 text-center animate" data-animation="fadeInUp">
+
+							<div class="widget widget_nav_menu">
+								<ul class="list-unstyled">
+									<li>
+										<a href="about.html">About</a>
+									</li>
+
+									<li>
+										<a href="courses.html">Courses</a>
+									</li>
+									<li>
+										<a href="blog-right.html">Blog</a>
+									</li>
+									<li>
+										<a href="shop-right.html">Shop</a>
+									</li>
+									<li>
+										<a href="contact.html">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-2 col-12 text-center text-xl-right animate" data-animation="fadeInUp">
+							<span class="social-icons">
+								<a href="#" class="fab fab fa-facebook-f @iconClass" title="facebook"></a>
+								<a href="#" class="fab fa-telegram-plane @iconClass" title="telegram"></a>
+								<a href="#" class="fab fa-linkedin-in @iconClass" title="linkedin"></a>
+								<a href="#" class="fab fa-instagram @iconClass" title="instagram"></a>
+							</span>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+
+			<section class="page_copyright copyright1 ds s-pt-70 s-pb-60 s-bordertop">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-12 text-center">
+
+							<p>&copy; Copyright <span class="copyright_year">2021</span> All Rights Reserved</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+</body>
+
+</html>
